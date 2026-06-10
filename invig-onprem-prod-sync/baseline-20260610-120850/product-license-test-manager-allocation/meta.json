@@ -1,0 +1,14 @@
+{
+  "name": "product-license-test-manager-allocation",
+  "path": "/product-license/test-manager-allocation",
+  "shots": {
+    "before": {
+      "png": "product-license-test-manager-allocation/before.png",
+      "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+      "ok": true,
+      "bounced": true,
+      "errors": [],
+      "failed": []
+    }
+  }
+}

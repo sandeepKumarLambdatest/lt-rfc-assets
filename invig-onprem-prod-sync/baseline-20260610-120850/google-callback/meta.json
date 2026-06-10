@@ -1,0 +1,16 @@
+{
+  "name": "google-callback",
+  "path": "/google/callback",
+  "shots": {
+    "before": {
+      "png": "google-callback/before.png",
+      "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/google/callback",
+      "ok": true,
+      "bounced": false,
+      "errors": [
+        "Failed to load resource: the server responded with a status of 400 (Bad Request)"
+      ],
+      "failed": []
+    }
+  }
+}

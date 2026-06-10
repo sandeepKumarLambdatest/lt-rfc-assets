@@ -1,0 +1,16 @@
+{
+  "name": "google-login",
+  "path": "/google/login",
+  "shots": {
+    "before": {
+      "png": "google-login/before.png",
+      "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/google/login",
+      "ok": true,
+      "bounced": false,
+      "errors": [
+        "_.Cd"
+      ],
+      "failed": []
+    }
+  }
+}

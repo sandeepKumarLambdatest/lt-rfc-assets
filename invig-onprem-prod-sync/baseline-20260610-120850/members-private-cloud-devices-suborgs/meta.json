@@ -1,0 +1,14 @@
+{
+  "name": "members-private-cloud-devices-suborgs",
+  "path": "/members/private-cloud-devices-suborgs",
+  "shots": {
+    "before": {
+      "png": "members-private-cloud-devices-suborgs/before.png",
+      "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/members/private-cloud-devices-suborgs",
+      "ok": true,
+      "bounced": false,
+      "errors": [],
+      "failed": []
+    }
+  }
+}

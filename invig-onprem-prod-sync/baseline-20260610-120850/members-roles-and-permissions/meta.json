@@ -1,0 +1,14 @@
+{
+  "name": "members-roles-and-permissions",
+  "path": "/members/roles-and-permissions",
+  "shots": {
+    "before": {
+      "png": "members-roles-and-permissions/before.png",
+      "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+      "ok": true,
+      "bounced": true,
+      "errors": [],
+      "failed": []
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "register",
+  "path": "/register",
+  "shots": {
+    "before": {
+      "png": "register/before.png",
+      "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/register",
+      "ok": true,
+      "bounced": false,
+      "errors": [],
+      "failed": []
+    }
+  }
+}

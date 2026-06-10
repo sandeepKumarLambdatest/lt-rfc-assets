@@ -1,0 +1,14 @@
+{
+  "name": "sso-admin-login",
+  "path": "/sso/admin-login",
+  "shots": {
+    "before": {
+      "png": "sso-admin-login/before.png",
+      "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+      "ok": true,
+      "bounced": false,
+      "errors": [],
+      "failed": []
+    }
+  }
+}

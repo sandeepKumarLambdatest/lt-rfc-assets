@@ -1,0 +1,14 @@
+{
+  "name": "refresh",
+  "path": "/refresh",
+  "shots": {
+    "before": {
+      "png": "refresh/before.png",
+      "finalUrl": "about:blank",
+      "ok": true,
+      "bounced": false,
+      "errors": [],
+      "failed": []
+    }
+  }
+}

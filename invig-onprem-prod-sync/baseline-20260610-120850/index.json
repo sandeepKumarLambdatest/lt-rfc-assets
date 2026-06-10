@@ -1,0 +1,830 @@
+{
+  "generatedAt": "2026-06-10T12:08:57.243Z",
+  "origins": [
+    "before"
+  ],
+  "routes": [
+    {
+      "name": "register",
+      "path": "/register",
+      "shots": {
+        "before": {
+          "png": "register/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/register",
+          "ok": true,
+          "bounced": false,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "password-reset",
+      "path": "/password/reset",
+      "shots": {
+        "before": {
+          "png": "password-reset/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/password/reset",
+          "ok": true,
+          "bounced": false,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "email-verify",
+      "path": "/email/verify",
+      "shots": {
+        "before": {
+          "png": "email-verify/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": true,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "profile-setup",
+      "path": "/profile/setup",
+      "shots": {
+        "before": {
+          "png": "profile-setup/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": true,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "dashboard",
+      "path": "/dashboard",
+      "shots": {
+        "before": {
+          "png": "dashboard/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": true,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "tunnels",
+      "path": "/tunnels",
+      "shots": {
+        "before": {
+          "png": "tunnels/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": true,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "oauth2",
+      "path": "/oauth2/",
+      "shots": {
+        "before": {
+          "png": "oauth2/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/oauth2/",
+          "ok": true,
+          "bounced": false,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "oauth2-redirect",
+      "path": "/oauth2/redirect",
+      "shots": {
+        "before": {
+          "png": "oauth2-redirect/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/oauth2/redirect",
+          "ok": true,
+          "bounced": false,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "sso-admin-login",
+      "path": "/sso/admin-login",
+      "shots": {
+        "before": {
+          "png": "sso-admin-login/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": false,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "login",
+      "path": "/login",
+      "shots": {
+        "before": {
+          "png": "login/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": false,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "community-authorize",
+      "path": "/community/authorize",
+      "shots": {
+        "before": {
+          "png": "community-authorize/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/community/authorize",
+          "ok": true,
+          "bounced": false,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "sso",
+      "path": "/sso",
+      "shots": {
+        "before": {
+          "png": "sso/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/sso",
+          "ok": true,
+          "bounced": false,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "msteams-authorize",
+      "path": "/msteams/authorize",
+      "shots": {
+        "before": {
+          "png": "msteams-authorize/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/msteams/authorize",
+          "ok": true,
+          "bounced": false,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "start",
+      "path": "/start",
+      "shots": {
+        "before": {
+          "png": "start/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": true,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "v1-start",
+      "path": "/v1/start",
+      "shots": {
+        "before": {
+          "png": "v1-start/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": true,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "community-success",
+      "path": "/community/success",
+      "shots": {
+        "before": {
+          "png": "community-success/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": true,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "ltbrowser-success",
+      "path": "/ltbrowser/success",
+      "shots": {
+        "before": {
+          "png": "ltbrowser-success/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": true,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "ltbrowser-authorize",
+      "path": "/ltbrowser/authorize",
+      "shots": {
+        "before": {
+          "png": "ltbrowser-authorize/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login/google",
+          "ok": true,
+          "bounced": true,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "underpass-success",
+      "path": "/underpass/success",
+      "shots": {
+        "before": {
+          "png": "underpass-success/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": true,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "details-profile",
+      "path": "/details/profile",
+      "shots": {
+        "before": {
+          "png": "details-profile/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": true,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "security",
+      "path": "/security",
+      "shots": {
+        "before": {
+          "png": "security/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": true,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "members-users",
+      "path": "/members/users",
+      "shots": {
+        "before": {
+          "png": "members-users/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": true,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "members-service-accounts",
+      "path": "/members/service-accounts",
+      "shots": {
+        "before": {
+          "png": "members-service-accounts/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": true,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "members-groups",
+      "path": "/members/groups",
+      "shots": {
+        "before": {
+          "png": "members-groups/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": true,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "members-roles-and-permissions",
+      "path": "/members/roles-and-permissions",
+      "shots": {
+        "before": {
+          "png": "members-roles-and-permissions/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": true,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "members-teams",
+      "path": "/members/teams",
+      "shots": {
+        "before": {
+          "png": "members-teams/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": true,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "members-custom-roles",
+      "path": "/members/custom-roles",
+      "shots": {
+        "before": {
+          "png": "members-custom-roles/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": true,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "projects",
+      "path": "/projects",
+      "shots": {
+        "before": {
+          "png": "projects/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": true,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "notifications",
+      "path": "/notifications",
+      "shots": {
+        "before": {
+          "png": "notifications/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": true,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "preferences",
+      "path": "/preferences",
+      "shots": {
+        "before": {
+          "png": "preferences/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": true,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "support",
+      "path": "/support",
+      "shots": {
+        "before": {
+          "png": "support/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": true,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "sub-organizations",
+      "path": "/sub-organizations",
+      "shots": {
+        "before": {
+          "png": "sub-organizations/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": true,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "reservations",
+      "path": "/reservations",
+      "shots": {
+        "before": {
+          "png": "reservations/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/reservations",
+          "ok": true,
+          "bounced": false,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "sub-organizations-view",
+      "path": "/sub-organizations-view",
+      "shots": {
+        "before": {
+          "png": "sub-organizations-view/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/sub-organizations-view",
+          "ok": true,
+          "bounced": false,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "mfa-recovery",
+      "path": "/mfa/recovery",
+      "shots": {
+        "before": {
+          "png": "mfa-recovery/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/mfa/recovery",
+          "ok": true,
+          "bounced": false,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "auth-sso-create",
+      "path": "/auth/sso/create",
+      "shots": {
+        "before": {
+          "png": "auth-sso-create/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": false,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "auth-sso-update",
+      "path": "/auth/sso/update",
+      "shots": {
+        "before": {
+          "png": "auth-sso-update/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": false,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "auth-sso-exempt-users",
+      "path": "/auth/sso/exempt-users",
+      "shots": {
+        "before": {
+          "png": "auth-sso-exempt-users/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": false,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "google-login",
+      "path": "/google/login",
+      "shots": {
+        "before": {
+          "png": "google-login/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/google/login",
+          "ok": true,
+          "bounced": false,
+          "errors": [
+            "_.Cd"
+          ],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "google-callback",
+      "path": "/google/callback",
+      "shots": {
+        "before": {
+          "png": "google-callback/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/google/callback",
+          "ok": true,
+          "bounced": false,
+          "errors": [
+            "Failed to load resource: the server responded with a status of 400 (Bad Request)"
+          ],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "github-login",
+      "path": "/github/login",
+      "shots": {
+        "before": {
+          "png": "github-login/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/github/login",
+          "ok": false,
+          "bounced": false,
+          "errors": [
+            "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+            "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+            "nav: TimeoutError: page.goto: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/github/login\", waiting until \"networkidle\"\u001b[22m\n"
+          ],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "github-callback",
+      "path": "/github/callback",
+      "shots": {
+        "before": {
+          "png": "github-callback/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/github/callback",
+          "ok": true,
+          "bounced": false,
+          "errors": [
+            "Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)"
+          ],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "root",
+      "path": "/",
+      "shots": {
+        "before": {
+          "png": "root/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": true,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "test-intelligence-success",
+      "path": "/test-intelligence/success",
+      "shots": {
+        "before": {
+          "png": "test-intelligence-success/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": true,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "audit-logs",
+      "path": "/audit-logs",
+      "shots": {
+        "before": {
+          "png": "audit-logs/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": true,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "notifications-old",
+      "path": "/notifications/old",
+      "shots": {
+        "before": {
+          "png": "notifications-old/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": true,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "members-invitations",
+      "path": "/members/invitations",
+      "shots": {
+        "before": {
+          "png": "members-invitations/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": true,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "oauth-authorize",
+      "path": "/oauth/authorize",
+      "shots": {
+        "before": {
+          "png": "oauth-authorize/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/oauth/authorize",
+          "ok": true,
+          "bounced": false,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "refresh",
+      "path": "/refresh",
+      "shots": {
+        "before": {
+          "png": "refresh/before.png",
+          "finalUrl": "about:blank",
+          "ok": true,
+          "bounced": false,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "logout",
+      "path": "/logout",
+      "shots": {
+        "before": {
+          "png": "logout/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": true,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "licensing",
+      "path": "/licensing",
+      "shots": {
+        "before": {
+          "png": "licensing/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": true,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "members-private-cloud-devices",
+      "path": "/members/private-cloud-devices",
+      "shots": {
+        "before": {
+          "png": "members-private-cloud-devices/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": true,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "members-private-cloud-devices-teams",
+      "path": "/members/private-cloud-devices-teams",
+      "shots": {
+        "before": {
+          "png": "members-private-cloud-devices-teams/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/members/private-cloud-devices-teams",
+          "ok": true,
+          "bounced": false,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "members-private-cloud-devices-suborgs",
+      "path": "/members/private-cloud-devices-suborgs",
+      "shots": {
+        "before": {
+          "png": "members-private-cloud-devices-suborgs/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/members/private-cloud-devices-suborgs",
+          "ok": true,
+          "bounced": false,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "product-license-test-manager-allocation",
+      "path": "/product-license/test-manager-allocation",
+      "shots": {
+        "before": {
+          "png": "product-license-test-manager-allocation/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": true,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "product-license-test-manager",
+      "path": "/product-license/test-manager",
+      "shots": {
+        "before": {
+          "png": "product-license-test-manager/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": true,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "product-license-kane-ai",
+      "path": "/product-license/kane-ai",
+      "shots": {
+        "before": {
+          "png": "product-license-kane-ai/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+          "ok": true,
+          "bounced": true,
+          "errors": [],
+          "failed": []
+        }
+      }
+    },
+    {
+      "name": "helpdesk-login-error",
+      "path": "/helpdesk-login-error/",
+      "shots": {
+        "before": {
+          "png": "helpdesk-login-error/before.png",
+          "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/helpdesk-login-error/",
+          "ok": true,
+          "bounced": false,
+          "errors": [],
+          "failed": []
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "github-login",
+  "path": "/github/login",
+  "shots": {
+    "before": {
+      "png": "github-login/before.png",
+      "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/github/login",
+      "ok": false,
+      "bounced": false,
+      "errors": [
+        "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+        "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+        "nav: TimeoutError: page.goto: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/github/login\", waiting until \"networkidle\"\u001b[22m\n"
+      ],
+      "failed": []
+    }
+  }
+}

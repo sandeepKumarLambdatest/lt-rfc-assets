@@ -1,0 +1,14 @@
+{
+  "name": "auth-sso-create",
+  "path": "/auth/sso/create",
+  "shots": {
+    "before": {
+      "png": "auth-sso-create/before.png",
+      "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+      "ok": true,
+      "bounced": false,
+      "errors": [],
+      "failed": []
+    }
+  }
+}

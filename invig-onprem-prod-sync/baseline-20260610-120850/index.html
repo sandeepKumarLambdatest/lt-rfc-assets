@@ -1,0 +1,317 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Route-wise Screenshot Report</title>
+<style>
+ body{font:14px/1.5 -apple-system,Segoe UI,Roboto,sans-serif;margin:0;background:#0d1117;color:#e6edf3}
+ header{padding:20px 28px;border-bottom:1px solid #21262d;position:sticky;top:0;background:#0d1117;z-index:5}
+ h1{margin:0 0 6px;font-size:20px} .sub{color:#8b949e}
+ .legend span{margin-right:14px} .dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:middle}
+ .grid{display:flex;flex-wrap:wrap;gap:8px;padding:18px 28px}
+ .tile{display:flex;align-items:center;gap:4px;padding:6px 10px;border:1px solid #30363d;border-left-width:4px;border-radius:6px;color:#e6edf3;text-decoration:none;font-size:12px;background:#161b22}
+ .route{padding:18px 28px;border-top:1px solid #21262d} .route h3{display:flex;align-items:center;gap:8px;font-size:16px}
+ .route code{color:#79c0ff;background:#161b22;padding:2px 6px;border-radius:4px;font-size:12px} .v{font-size:11px;color:#8b949e;margin-left:auto}
+ table.shots{width:100%;border-collapse:collapse} td.shot{vertical-align:top;padding:6px;width:0}
+ td.shot img{max-width:46vw;border:1px solid #30363d;border-radius:6px;display:block}
+ .cap{font-size:11px;color:#8b949e;margin-top:4px} .cap a{color:#79c0ff} .err{color:#f85149}
+ a{color:#79c0ff}
+</style></head><body>
+<header>
+ <h1>Route-wise Screenshot Comparison</h1>
+ <div class="sub">2026-06-10T12:08:57.243Z · 58 routes · origins: before</div>
+ <div class="legend" style="margin-top:8px">
+  <span><span class="dot" style="background:#1a7f37"></span>pass 20</span>
+  <span><span class="dot" style="background:#9a6700"></span>warn 4</span>
+  <span><span class="dot" style="background:#8250df"></span>auth-bounce 34</span>
+  <span><span class="dot" style="background:#cf222e"></span>fail 0</span>
+ </div>
+</header>
+<div class="grid"><a class="tile" href="#register" style="border-color:#1a7f37"><span class="dot" style="background:#1a7f37"></span>register</a><a class="tile" href="#password-reset" style="border-color:#1a7f37"><span class="dot" style="background:#1a7f37"></span>password-reset</a><a class="tile" href="#email-verify" style="border-color:#8250df"><span class="dot" style="background:#8250df"></span>email-verify</a><a class="tile" href="#profile-setup" style="border-color:#8250df"><span class="dot" style="background:#8250df"></span>profile-setup</a><a class="tile" href="#dashboard" style="border-color:#8250df"><span class="dot" style="background:#8250df"></span>dashboard</a><a class="tile" href="#tunnels" style="border-color:#8250df"><span class="dot" style="background:#8250df"></span>tunnels</a><a class="tile" href="#oauth2" style="border-color:#1a7f37"><span class="dot" style="background:#1a7f37"></span>oauth2</a><a class="tile" href="#oauth2-redirect" style="border-color:#1a7f37"><span class="dot" style="background:#1a7f37"></span>oauth2-redirect</a><a class="tile" href="#sso-admin-login" style="border-color:#1a7f37"><span class="dot" style="background:#1a7f37"></span>sso-admin-login</a><a class="tile" href="#login" style="border-color:#1a7f37"><span class="dot" style="background:#1a7f37"></span>login</a><a class="tile" href="#community-authorize" style="border-color:#1a7f37"><span class="dot" style="background:#1a7f37"></span>community-authorize</a><a class="tile" href="#sso" style="border-color:#1a7f37"><span class="dot" style="background:#1a7f37"></span>sso</a><a class="tile" href="#msteams-authorize" style="border-color:#1a7f37"><span class="dot" style="background:#1a7f37"></span>msteams-authorize</a><a class="tile" href="#start" style="border-color:#8250df"><span class="dot" style="background:#8250df"></span>start</a><a class="tile" href="#v1-start" style="border-color:#8250df"><span class="dot" style="background:#8250df"></span>v1-start</a><a class="tile" href="#community-success" style="border-color:#8250df"><span class="dot" style="background:#8250df"></span>community-success</a><a class="tile" href="#ltbrowser-success" style="border-color:#8250df"><span class="dot" style="background:#8250df"></span>ltbrowser-success</a><a class="tile" href="#ltbrowser-authorize" style="border-color:#8250df"><span class="dot" style="background:#8250df"></span>ltbrowser-authorize</a><a class="tile" href="#underpass-success" style="border-color:#8250df"><span class="dot" style="background:#8250df"></span>underpass-success</a><a class="tile" href="#details-profile" style="border-color:#8250df"><span class="dot" style="background:#8250df"></span>details-profile</a><a class="tile" href="#security" style="border-color:#8250df"><span class="dot" style="background:#8250df"></span>security</a><a class="tile" href="#members-users" style="border-color:#8250df"><span class="dot" style="background:#8250df"></span>members-users</a><a class="tile" href="#members-service-accounts" style="border-color:#8250df"><span class="dot" style="background:#8250df"></span>members-service-accounts</a><a class="tile" href="#members-groups" style="border-color:#8250df"><span class="dot" style="background:#8250df"></span>members-groups</a><a class="tile" href="#members-roles-and-permissions" style="border-color:#8250df"><span class="dot" style="background:#8250df"></span>members-roles-and-permissions</a><a class="tile" href="#members-teams" style="border-color:#8250df"><span class="dot" style="background:#8250df"></span>members-teams</a><a class="tile" href="#members-custom-roles" style="border-color:#8250df"><span class="dot" style="background:#8250df"></span>members-custom-roles</a><a class="tile" href="#projects" style="border-color:#8250df"><span class="dot" style="background:#8250df"></span>projects</a><a class="tile" href="#notifications" style="border-color:#8250df"><span class="dot" style="background:#8250df"></span>notifications</a><a class="tile" href="#preferences" style="border-color:#8250df"><span class="dot" style="background:#8250df"></span>preferences</a><a class="tile" href="#support" style="border-color:#8250df"><span class="dot" style="background:#8250df"></span>support</a><a class="tile" href="#sub-organizations" style="border-color:#8250df"><span class="dot" style="background:#8250df"></span>sub-organizations</a><a class="tile" href="#reservations" style="border-color:#1a7f37"><span class="dot" style="background:#1a7f37"></span>reservations</a><a class="tile" href="#sub-organizations-view" style="border-color:#1a7f37"><span class="dot" style="background:#1a7f37"></span>sub-organizations-view</a><a class="tile" href="#mfa-recovery" style="border-color:#1a7f37"><span class="dot" style="background:#1a7f37"></span>mfa-recovery</a><a class="tile" href="#auth-sso-create" style="border-color:#1a7f37"><span class="dot" style="background:#1a7f37"></span>auth-sso-create</a><a class="tile" href="#auth-sso-update" style="border-color:#1a7f37"><span class="dot" style="background:#1a7f37"></span>auth-sso-update</a><a class="tile" href="#auth-sso-exempt-users" style="border-color:#1a7f37"><span class="dot" style="background:#1a7f37"></span>auth-sso-exempt-users</a><a class="tile" href="#google-login" style="border-color:#9a6700"><span class="dot" style="background:#9a6700"></span>google-login</a><a class="tile" href="#google-callback" style="border-color:#9a6700"><span class="dot" style="background:#9a6700"></span>google-callback</a><a class="tile" href="#github-login" style="border-color:#9a6700"><span class="dot" style="background:#9a6700"></span>github-login</a><a class="tile" href="#github-callback" style="border-color:#9a6700"><span class="dot" style="background:#9a6700"></span>github-callback</a><a class="tile" href="#root" style="border-color:#8250df"><span class="dot" style="background:#8250df"></span>root</a><a class="tile" href="#test-intelligence-success" style="border-color:#8250df"><span class="dot" style="background:#8250df"></span>test-intelligence-success</a><a class="tile" href="#audit-logs" style="border-color:#8250df"><span class="dot" style="background:#8250df"></span>audit-logs</a><a class="tile" href="#notifications-old" style="border-color:#8250df"><span class="dot" style="background:#8250df"></span>notifications-old</a><a class="tile" href="#members-invitations" style="border-color:#8250df"><span class="dot" style="background:#8250df"></span>members-invitations</a><a class="tile" href="#oauth-authorize" style="border-color:#1a7f37"><span class="dot" style="background:#1a7f37"></span>oauth-authorize</a><a class="tile" href="#refresh" style="border-color:#1a7f37"><span class="dot" style="background:#1a7f37"></span>refresh</a><a class="tile" href="#logout" style="border-color:#8250df"><span class="dot" style="background:#8250df"></span>logout</a><a class="tile" href="#licensing" style="border-color:#8250df"><span class="dot" style="background:#8250df"></span>licensing</a><a class="tile" href="#members-private-cloud-devices" style="border-color:#8250df"><span class="dot" style="background:#8250df"></span>members-private-cloud-devices</a><a class="tile" href="#members-private-cloud-devices-teams" style="border-color:#1a7f37"><span class="dot" style="background:#1a7f37"></span>members-private-cloud-devices-teams</a><a class="tile" href="#members-private-cloud-devices-suborgs" style="border-color:#1a7f37"><span class="dot" style="background:#1a7f37"></span>members-private-cloud-devices-suborgs</a><a class="tile" href="#product-license-test-manager-allocation" style="border-color:#8250df"><span class="dot" style="background:#8250df"></span>product-license-test-manager-allocation</a><a class="tile" href="#product-license-test-manager" style="border-color:#8250df"><span class="dot" style="background:#8250df"></span>product-license-test-manager</a><a class="tile" href="#product-license-kane-ai" style="border-color:#8250df"><span class="dot" style="background:#8250df"></span>product-license-kane-ai</a><a class="tile" href="#helpdesk-login-error" style="border-color:#1a7f37"><span class="dot" style="background:#1a7f37"></span>helpdesk-login-error</a></div>
+
+  <section id="register" class="route">
+    <h3><span class="dot" style="background:#1a7f37"></span>register <code>/register</code> <span class="v">PASS</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="register/before.png" target="_blank"><img loading="lazy" src="register/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/register" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="password-reset" class="route">
+    <h3><span class="dot" style="background:#1a7f37"></span>password-reset <code>/password/reset</code> <span class="v">PASS</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="password-reset/before.png" target="_blank"><img loading="lazy" src="password-reset/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/password/reset" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="email-verify" class="route">
+    <h3><span class="dot" style="background:#8250df"></span>email-verify <code>/email/verify</code> <span class="v">AUTH</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="email-verify/before.png" target="_blank"><img loading="lazy" src="email-verify/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="profile-setup" class="route">
+    <h3><span class="dot" style="background:#8250df"></span>profile-setup <code>/profile/setup</code> <span class="v">AUTH</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="profile-setup/before.png" target="_blank"><img loading="lazy" src="profile-setup/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="dashboard" class="route">
+    <h3><span class="dot" style="background:#8250df"></span>dashboard <code>/dashboard</code> <span class="v">AUTH</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="dashboard/before.png" target="_blank"><img loading="lazy" src="dashboard/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="tunnels" class="route">
+    <h3><span class="dot" style="background:#8250df"></span>tunnels <code>/tunnels</code> <span class="v">AUTH</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="tunnels/before.png" target="_blank"><img loading="lazy" src="tunnels/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="oauth2" class="route">
+    <h3><span class="dot" style="background:#1a7f37"></span>oauth2 <code>/oauth2/</code> <span class="v">PASS</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="oauth2/before.png" target="_blank"><img loading="lazy" src="oauth2/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/oauth2/" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="oauth2-redirect" class="route">
+    <h3><span class="dot" style="background:#1a7f37"></span>oauth2-redirect <code>/oauth2/redirect</code> <span class="v">PASS</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="oauth2-redirect/before.png" target="_blank"><img loading="lazy" src="oauth2-redirect/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/oauth2/redirect" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="sso-admin-login" class="route">
+    <h3><span class="dot" style="background:#1a7f37"></span>sso-admin-login <code>/sso/admin-login</code> <span class="v">PASS</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="sso-admin-login/before.png" target="_blank"><img loading="lazy" src="sso-admin-login/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="login" class="route">
+    <h3><span class="dot" style="background:#1a7f37"></span>login <code>/login</code> <span class="v">PASS</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="login/before.png" target="_blank"><img loading="lazy" src="login/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="community-authorize" class="route">
+    <h3><span class="dot" style="background:#1a7f37"></span>community-authorize <code>/community/authorize</code> <span class="v">PASS</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="community-authorize/before.png" target="_blank"><img loading="lazy" src="community-authorize/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/community/authorize" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="sso" class="route">
+    <h3><span class="dot" style="background:#1a7f37"></span>sso <code>/sso</code> <span class="v">PASS</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="sso/before.png" target="_blank"><img loading="lazy" src="sso/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/sso" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="msteams-authorize" class="route">
+    <h3><span class="dot" style="background:#1a7f37"></span>msteams-authorize <code>/msteams/authorize</code> <span class="v">PASS</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="msteams-authorize/before.png" target="_blank"><img loading="lazy" src="msteams-authorize/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/msteams/authorize" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="start" class="route">
+    <h3><span class="dot" style="background:#8250df"></span>start <code>/start</code> <span class="v">AUTH</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="start/before.png" target="_blank"><img loading="lazy" src="start/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="v1-start" class="route">
+    <h3><span class="dot" style="background:#8250df"></span>v1-start <code>/v1/start</code> <span class="v">AUTH</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="v1-start/before.png" target="_blank"><img loading="lazy" src="v1-start/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="community-success" class="route">
+    <h3><span class="dot" style="background:#8250df"></span>community-success <code>/community/success</code> <span class="v">AUTH</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="community-success/before.png" target="_blank"><img loading="lazy" src="community-success/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="ltbrowser-success" class="route">
+    <h3><span class="dot" style="background:#8250df"></span>ltbrowser-success <code>/ltbrowser/success</code> <span class="v">AUTH</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="ltbrowser-success/before.png" target="_blank"><img loading="lazy" src="ltbrowser-success/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="ltbrowser-authorize" class="route">
+    <h3><span class="dot" style="background:#8250df"></span>ltbrowser-authorize <code>/ltbrowser/authorize</code> <span class="v">AUTH</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="ltbrowser-authorize/before.png" target="_blank"><img loading="lazy" src="ltbrowser-authorize/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login/google" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="underpass-success" class="route">
+    <h3><span class="dot" style="background:#8250df"></span>underpass-success <code>/underpass/success</code> <span class="v">AUTH</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="underpass-success/before.png" target="_blank"><img loading="lazy" src="underpass-success/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="details-profile" class="route">
+    <h3><span class="dot" style="background:#8250df"></span>details-profile <code>/details/profile</code> <span class="v">AUTH</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="details-profile/before.png" target="_blank"><img loading="lazy" src="details-profile/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="security" class="route">
+    <h3><span class="dot" style="background:#8250df"></span>security <code>/security</code> <span class="v">AUTH</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="security/before.png" target="_blank"><img loading="lazy" src="security/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="members-users" class="route">
+    <h3><span class="dot" style="background:#8250df"></span>members-users <code>/members/users</code> <span class="v">AUTH</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="members-users/before.png" target="_blank"><img loading="lazy" src="members-users/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="members-service-accounts" class="route">
+    <h3><span class="dot" style="background:#8250df"></span>members-service-accounts <code>/members/service-accounts</code> <span class="v">AUTH</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="members-service-accounts/before.png" target="_blank"><img loading="lazy" src="members-service-accounts/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="members-groups" class="route">
+    <h3><span class="dot" style="background:#8250df"></span>members-groups <code>/members/groups</code> <span class="v">AUTH</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="members-groups/before.png" target="_blank"><img loading="lazy" src="members-groups/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="members-roles-and-permissions" class="route">
+    <h3><span class="dot" style="background:#8250df"></span>members-roles-and-permissions <code>/members/roles-and-permissions</code> <span class="v">AUTH</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="members-roles-and-permissions/before.png" target="_blank"><img loading="lazy" src="members-roles-and-permissions/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="members-teams" class="route">
+    <h3><span class="dot" style="background:#8250df"></span>members-teams <code>/members/teams</code> <span class="v">AUTH</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="members-teams/before.png" target="_blank"><img loading="lazy" src="members-teams/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="members-custom-roles" class="route">
+    <h3><span class="dot" style="background:#8250df"></span>members-custom-roles <code>/members/custom-roles</code> <span class="v">AUTH</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="members-custom-roles/before.png" target="_blank"><img loading="lazy" src="members-custom-roles/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="projects" class="route">
+    <h3><span class="dot" style="background:#8250df"></span>projects <code>/projects</code> <span class="v">AUTH</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="projects/before.png" target="_blank"><img loading="lazy" src="projects/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="notifications" class="route">
+    <h3><span class="dot" style="background:#8250df"></span>notifications <code>/notifications</code> <span class="v">AUTH</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="notifications/before.png" target="_blank"><img loading="lazy" src="notifications/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="preferences" class="route">
+    <h3><span class="dot" style="background:#8250df"></span>preferences <code>/preferences</code> <span class="v">AUTH</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="preferences/before.png" target="_blank"><img loading="lazy" src="preferences/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="support" class="route">
+    <h3><span class="dot" style="background:#8250df"></span>support <code>/support</code> <span class="v">AUTH</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="support/before.png" target="_blank"><img loading="lazy" src="support/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="sub-organizations" class="route">
+    <h3><span class="dot" style="background:#8250df"></span>sub-organizations <code>/sub-organizations</code> <span class="v">AUTH</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="sub-organizations/before.png" target="_blank"><img loading="lazy" src="sub-organizations/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="reservations" class="route">
+    <h3><span class="dot" style="background:#1a7f37"></span>reservations <code>/reservations</code> <span class="v">PASS</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="reservations/before.png" target="_blank"><img loading="lazy" src="reservations/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/reservations" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="sub-organizations-view" class="route">
+    <h3><span class="dot" style="background:#1a7f37"></span>sub-organizations-view <code>/sub-organizations-view</code> <span class="v">PASS</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="sub-organizations-view/before.png" target="_blank"><img loading="lazy" src="sub-organizations-view/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/sub-organizations-view" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="mfa-recovery" class="route">
+    <h3><span class="dot" style="background:#1a7f37"></span>mfa-recovery <code>/mfa/recovery</code> <span class="v">PASS</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="mfa-recovery/before.png" target="_blank"><img loading="lazy" src="mfa-recovery/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/mfa/recovery" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="auth-sso-create" class="route">
+    <h3><span class="dot" style="background:#1a7f37"></span>auth-sso-create <code>/auth/sso/create</code> <span class="v">PASS</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="auth-sso-create/before.png" target="_blank"><img loading="lazy" src="auth-sso-create/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="auth-sso-update" class="route">
+    <h3><span class="dot" style="background:#1a7f37"></span>auth-sso-update <code>/auth/sso/update</code> <span class="v">PASS</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="auth-sso-update/before.png" target="_blank"><img loading="lazy" src="auth-sso-update/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="auth-sso-exempt-users" class="route">
+    <h3><span class="dot" style="background:#1a7f37"></span>auth-sso-exempt-users <code>/auth/sso/exempt-users</code> <span class="v">PASS</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="auth-sso-exempt-users/before.png" target="_blank"><img loading="lazy" src="auth-sso-exempt-users/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="google-login" class="route">
+    <h3><span class="dot" style="background:#9a6700"></span>google-login <code>/google/login</code> <span class="v">WARN</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="google-login/before.png" target="_blank"><img loading="lazy" src="google-login/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/google/login" target="_blank">url</a> · <span class="err">1 err</span></div></td></tr></table>
+  </section>
+
+  <section id="google-callback" class="route">
+    <h3><span class="dot" style="background:#9a6700"></span>google-callback <code>/google/callback</code> <span class="v">WARN</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="google-callback/before.png" target="_blank"><img loading="lazy" src="google-callback/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/google/callback" target="_blank">url</a> · <span class="err">1 err</span></div></td></tr></table>
+  </section>
+
+  <section id="github-login" class="route">
+    <h3><span class="dot" style="background:#9a6700"></span>github-login <code>/github/login</code> <span class="v">WARN</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="github-login/before.png" target="_blank"><img loading="lazy" src="github-login/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/github/login" target="_blank">url</a> · <span class="err">3 err</span></div></td></tr></table>
+  </section>
+
+  <section id="github-callback" class="route">
+    <h3><span class="dot" style="background:#9a6700"></span>github-callback <code>/github/callback</code> <span class="v">WARN</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="github-callback/before.png" target="_blank"><img loading="lazy" src="github-callback/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/github/callback" target="_blank">url</a> · <span class="err">1 err</span></div></td></tr></table>
+  </section>
+
+  <section id="root" class="route">
+    <h3><span class="dot" style="background:#8250df"></span>root <code>/</code> <span class="v">AUTH</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="root/before.png" target="_blank"><img loading="lazy" src="root/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="test-intelligence-success" class="route">
+    <h3><span class="dot" style="background:#8250df"></span>test-intelligence-success <code>/test-intelligence/success</code> <span class="v">AUTH</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="test-intelligence-success/before.png" target="_blank"><img loading="lazy" src="test-intelligence-success/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="audit-logs" class="route">
+    <h3><span class="dot" style="background:#8250df"></span>audit-logs <code>/audit-logs</code> <span class="v">AUTH</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="audit-logs/before.png" target="_blank"><img loading="lazy" src="audit-logs/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="notifications-old" class="route">
+    <h3><span class="dot" style="background:#8250df"></span>notifications-old <code>/notifications/old</code> <span class="v">AUTH</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="notifications-old/before.png" target="_blank"><img loading="lazy" src="notifications-old/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="members-invitations" class="route">
+    <h3><span class="dot" style="background:#8250df"></span>members-invitations <code>/members/invitations</code> <span class="v">AUTH</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="members-invitations/before.png" target="_blank"><img loading="lazy" src="members-invitations/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="oauth-authorize" class="route">
+    <h3><span class="dot" style="background:#1a7f37"></span>oauth-authorize <code>/oauth/authorize</code> <span class="v">PASS</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="oauth-authorize/before.png" target="_blank"><img loading="lazy" src="oauth-authorize/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/oauth/authorize" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="refresh" class="route">
+    <h3><span class="dot" style="background:#1a7f37"></span>refresh <code>/refresh</code> <span class="v">PASS</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="refresh/before.png" target="_blank"><img loading="lazy" src="refresh/before.png" alt="before"></a><div class="cap">before · <a href="about:blank" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="logout" class="route">
+    <h3><span class="dot" style="background:#8250df"></span>logout <code>/logout</code> <span class="v">AUTH</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="logout/before.png" target="_blank"><img loading="lazy" src="logout/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="licensing" class="route">
+    <h3><span class="dot" style="background:#8250df"></span>licensing <code>/licensing</code> <span class="v">AUTH</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="licensing/before.png" target="_blank"><img loading="lazy" src="licensing/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="members-private-cloud-devices" class="route">
+    <h3><span class="dot" style="background:#8250df"></span>members-private-cloud-devices <code>/members/private-cloud-devices</code> <span class="v">AUTH</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="members-private-cloud-devices/before.png" target="_blank"><img loading="lazy" src="members-private-cloud-devices/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="members-private-cloud-devices-teams" class="route">
+    <h3><span class="dot" style="background:#1a7f37"></span>members-private-cloud-devices-teams <code>/members/private-cloud-devices-teams</code> <span class="v">PASS</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="members-private-cloud-devices-teams/before.png" target="_blank"><img loading="lazy" src="members-private-cloud-devices-teams/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/members/private-cloud-devices-teams" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="members-private-cloud-devices-suborgs" class="route">
+    <h3><span class="dot" style="background:#1a7f37"></span>members-private-cloud-devices-suborgs <code>/members/private-cloud-devices-suborgs</code> <span class="v">PASS</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="members-private-cloud-devices-suborgs/before.png" target="_blank"><img loading="lazy" src="members-private-cloud-devices-suborgs/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/members/private-cloud-devices-suborgs" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="product-license-test-manager-allocation" class="route">
+    <h3><span class="dot" style="background:#8250df"></span>product-license-test-manager-allocation <code>/product-license/test-manager-allocation</code> <span class="v">AUTH</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="product-license-test-manager-allocation/before.png" target="_blank"><img loading="lazy" src="product-license-test-manager-allocation/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="product-license-test-manager" class="route">
+    <h3><span class="dot" style="background:#8250df"></span>product-license-test-manager <code>/product-license/test-manager</code> <span class="v">AUTH</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="product-license-test-manager/before.png" target="_blank"><img loading="lazy" src="product-license-test-manager/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="product-license-kane-ai" class="route">
+    <h3><span class="dot" style="background:#8250df"></span>product-license-kane-ai <code>/product-license/kane-ai</code> <span class="v">AUTH</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="product-license-kane-ai/before.png" target="_blank"><img loading="lazy" src="product-license-kane-ai/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login" target="_blank">url</a></div></td></tr></table>
+  </section>
+
+  <section id="helpdesk-login-error" class="route">
+    <h3><span class="dot" style="background:#1a7f37"></span>helpdesk-login-error <code>/helpdesk-login-error/</code> <span class="v">PASS</span></h3>
+    <table class="shots"><tr><td class="shot"><a href="helpdesk-login-error/before.png" target="_blank"><img loading="lazy" src="helpdesk-login-error/before.png" alt="before"></a><div class="cap">before · <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/helpdesk-login-error/" target="_blank">url</a></div></td></tr></table>
+  </section>
+</body></html>

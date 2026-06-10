@@ -1,0 +1,14 @@
+{
+  "name": "community-authorize",
+  "path": "/community/authorize",
+  "shots": {
+    "before": {
+      "png": "community-authorize/before.png",
+      "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/community/authorize",
+      "ok": true,
+      "bounced": false,
+      "errors": [],
+      "failed": []
+    }
+  }
+}

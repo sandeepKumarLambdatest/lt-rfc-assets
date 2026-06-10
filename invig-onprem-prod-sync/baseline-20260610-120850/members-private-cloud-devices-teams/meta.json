@@ -1,0 +1,14 @@
+{
+  "name": "members-private-cloud-devices-teams",
+  "path": "/members/private-cloud-devices-teams",
+  "shots": {
+    "before": {
+      "png": "members-private-cloud-devices-teams/before.png",
+      "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/members/private-cloud-devices-teams",
+      "ok": true,
+      "bounced": false,
+      "errors": [],
+      "failed": []
+    }
+  }
+}

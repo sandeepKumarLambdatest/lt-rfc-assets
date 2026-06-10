@@ -1,0 +1,16 @@
+{
+  "name": "github-callback",
+  "path": "/github/callback",
+  "shots": {
+    "before": {
+      "png": "github-callback/before.png",
+      "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/github/callback",
+      "ok": true,
+      "bounced": false,
+      "errors": [
+        "Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)"
+      ],
+      "failed": []
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "msteams-authorize",
+  "path": "/msteams/authorize",
+  "shots": {
+    "before": {
+      "png": "msteams-authorize/before.png",
+      "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/msteams/authorize",
+      "ok": true,
+      "bounced": false,
+      "errors": [],
+      "failed": []
+    }
+  }
+}

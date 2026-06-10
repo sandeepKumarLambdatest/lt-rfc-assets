@@ -1,0 +1,14 @@
+{
+  "name": "auth-sso-update",
+  "path": "/auth/sso/update",
+  "shots": {
+    "before": {
+      "png": "auth-sso-update/before.png",
+      "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+      "ok": true,
+      "bounced": false,
+      "errors": [],
+      "failed": []
+    }
+  }
+}

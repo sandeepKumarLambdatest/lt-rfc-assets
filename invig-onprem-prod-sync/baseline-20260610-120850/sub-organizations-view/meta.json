@@ -1,0 +1,14 @@
+{
+  "name": "sub-organizations-view",
+  "path": "/sub-organizations-view",
+  "shots": {
+    "before": {
+      "png": "sub-organizations-view/before.png",
+      "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/sub-organizations-view",
+      "ok": true,
+      "bounced": false,
+      "errors": [],
+      "failed": []
+    }
+  }
+}

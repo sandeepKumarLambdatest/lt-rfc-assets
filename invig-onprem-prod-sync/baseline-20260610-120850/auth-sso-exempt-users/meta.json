@@ -1,0 +1,14 @@
+{
+  "name": "auth-sso-exempt-users",
+  "path": "/auth/sso/exempt-users",
+  "shots": {
+    "before": {
+      "png": "auth-sso-exempt-users/before.png",
+      "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+      "ok": true,
+      "bounced": false,
+      "errors": [],
+      "failed": []
+    }
+  }
+}

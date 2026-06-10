@@ -1,0 +1,14 @@
+{
+  "name": "product-license-kane-ai",
+  "path": "/product-license/kane-ai",
+  "shots": {
+    "before": {
+      "png": "product-license-kane-ai/before.png",
+      "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+      "ok": true,
+      "bounced": true,
+      "errors": [],
+      "failed": []
+    }
+  }
+}

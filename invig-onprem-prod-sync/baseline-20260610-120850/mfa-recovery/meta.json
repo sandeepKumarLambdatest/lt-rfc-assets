@@ -1,0 +1,14 @@
+{
+  "name": "mfa-recovery",
+  "path": "/mfa/recovery",
+  "shots": {
+    "before": {
+      "png": "mfa-recovery/before.png",
+      "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/mfa/recovery",
+      "ok": true,
+      "bounced": false,
+      "errors": [],
+      "failed": []
+    }
+  }
+}

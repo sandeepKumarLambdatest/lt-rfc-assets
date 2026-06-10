@@ -1,0 +1,14 @@
+{
+  "name": "members-teams",
+  "path": "/members/teams",
+  "shots": {
+    "before": {
+      "png": "members-teams/before.png",
+      "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login",
+      "ok": true,
+      "bounced": true,
+      "errors": [],
+      "failed": []
+    }
+  }
+}

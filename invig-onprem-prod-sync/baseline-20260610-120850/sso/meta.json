@@ -1,0 +1,14 @@
+{
+  "name": "sso",
+  "path": "/sso",
+  "shots": {
+    "before": {
+      "png": "sso/before.png",
+      "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/sso",
+      "ok": true,
+      "bounced": false,
+      "errors": [],
+      "failed": []
+    }
+  }
+}

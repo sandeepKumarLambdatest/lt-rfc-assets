@@ -1,0 +1,14 @@
+{
+  "name": "oauth-authorize",
+  "path": "/oauth/authorize",
+  "shots": {
+    "before": {
+      "png": "oauth-authorize/before.png",
+      "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/oauth/authorize",
+      "ok": true,
+      "bounced": false,
+      "errors": [],
+      "failed": []
+    }
+  }
+}

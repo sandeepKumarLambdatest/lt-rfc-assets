@@ -1,0 +1,14 @@
+{
+  "name": "password-reset",
+  "path": "/password/reset",
+  "shots": {
+    "before": {
+      "png": "password-reset/before.png",
+      "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/password/reset",
+      "ok": true,
+      "bounced": false,
+      "errors": [],
+      "failed": []
+    }
+  }
+}

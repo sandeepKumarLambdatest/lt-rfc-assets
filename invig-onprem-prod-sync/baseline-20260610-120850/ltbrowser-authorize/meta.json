@@ -1,0 +1,14 @@
+{
+  "name": "ltbrowser-authorize",
+  "path": "/ltbrowser/authorize",
+  "shots": {
+    "before": {
+      "png": "ltbrowser-authorize/before.png",
+      "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/login/google",
+      "ok": true,
+      "bounced": true,
+      "errors": [],
+      "failed": []
+    }
+  }
+}

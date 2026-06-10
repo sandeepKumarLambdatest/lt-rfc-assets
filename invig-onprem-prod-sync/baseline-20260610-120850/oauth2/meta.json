@@ -1,0 +1,14 @@
+{
+  "name": "oauth2",
+  "path": "/oauth2/",
+  "shots": {
+    "before": {
+      "png": "oauth2/before.png",
+      "finalUrl": "https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud/oauth2/",
+      "ok": true,
+      "bounced": false,
+      "errors": [],
+      "failed": []
+    }
+  }
+}
