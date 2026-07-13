@@ -1,0 +1,391 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>invig prod-onprem-sync — diff history</title>
+<style>
+ :root{--bg:#0d1117;--fg:#e6edf3;--mut:#8b949e;--card:#161b22;--bd:#30363d;--acc:#58a6ff;--add:#3fb950;--del:#f85149}
+ *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;padding:24px}
+ h1{font-size:18px;margin:0 0 4px} h2{font-size:15px;margin:22px 0 8px;color:var(--acc)} h3{font-size:14px;margin:14px 0 6px}
+ .mut{color:var(--mut)} a{color:var(--acc);text-decoration:none} a:hover{text-decoration:underline}
+ .card{background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:12px 14px;margin:10px 0}
+ .batch{background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:14px 16px;margin:16px 0}
+ .batch>.hdr{font-size:15px;margin:0 0 8px}
+ .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+ table{border-collapse:collapse;width:100%;margin:4px 0} td,th{border-bottom:1px solid var(--bd);padding:6px 8px;text-align:left;vertical-align:top}
+ code{background:#22272e;padding:1px 5px;border-radius:4px} .sha{color:var(--acc)} .add{color:var(--add)} .del{color:var(--del)}
+ .pill{display:inline-block;background:#22272e;border:1px solid var(--bd);border-radius:12px;padding:1px 8px;font-size:12px}
+ .leg-prod{border-color:#1f6feb} .leg-onprem{border-color:#8957e5}
+ .tag{display:inline-block;border-radius:10px;padding:1px 8px;font-size:11px;border:1px solid var(--bd)}
+ .tag.prod{color:#79c0ff;border-color:#1f6feb} .tag.onprem{color:#d2a8ff;border-color:#8957e5}
+</style></head><body>
+<h1>invig prod-onprem-sync — cumulative sync-diff history</h1>
+<div class="mut">generated 2026-07-13T10:00:55Z · repo LambdatestIncPrivate/lambda-invigilator-client · branch prod-onprem-sync · head <code class="sha">1008521c46</code> · <b>9 sync batches</b></div>
+
+<div class="card">
+  <div><b>Initial baseline</b> (timeline origin): <code class="sha">4e81c4aa17</code> · <a href="https://github.com/LambdatestIncPrivate/lambda-invigilator-client/pull/3641">PR #3641</a> · ~2026-06-10</div>
+  <div class="mut">Every batch below is a resync merge into prod-onprem-sync from upstream prod / on-prem since this baseline.</div>
+</div>
+
+<h2>Before / after environments to compare on</h2>
+<div class="grid">
+  <div class="card leg-onprem"><b>On-Premises</b> <span class="tag onprem">3000 → 3002</span><br>
+    before → <a href="https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud">https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud</a><br>
+    after&nbsp; → <a href="https://hyperexecute-onprem-after-fae34c-3002.hyperexecute.cloud">https://hyperexecute-onprem-after-fae34c-3002.hyperexecute.cloud</a></div>
+  <div class="card leg-prod"><b>Production</b> <span class="tag prod">3001 → 3003</span><br>
+    before → <a href="https://before-fae34c-3001.lambdatest.com">https://before-fae34c-3001.lambdatest.com</a><br>
+    after&nbsp; → <a href="https://after-fae34c-3003.lambdatest.com">https://after-fae34c-3003.lambdatest.com</a></div>
+</div>
+
+<h2>Sync batches (newest first)</h2>
+<div class="batch leg-onprem">
+  <div class="hdr"><span class="tag onprem">On-Premises</span> &nbsp;<b>2026-07-13</b> &nbsp;<code class="sha">7025c87dd4</code> → <code class="sha">1008521c46</code></div>
+  <div class="mut">4 commit(s) · 5 changed file(s) · upstream tip <code class="sha">9bc3140b6d</code> · <b>test on:</b> 3000 (before) vs 3002 (after)</div>
+  <div class="mut" style="margin:4px 0 2px">subject: Merge remote-tracking branch 'upstream/on-prem' into prod-onprem-sync</div>
+  <h3>Commits introduced (4)</h3>
+  <table><tr><th>commit</th><th>subject</th></tr>
+  <tr><td><code class="sha">9bc3140b6d</code></td><td>Merge pull request #3731 from rahul-lt/fix/profile-hidden-item-onprem</td></tr>
+  <tr><td><code class="sha">f7142a3e9d</code></td><td>style(profile): hide flagged profile items via lt-user-profile scope</td></tr>
+  <tr><td><code class="sha">a48c82bd75</code></td><td>Merge pull request #3728 from rahulgupta-02/security/SECURITY-1381-onprem</td></tr>
+  <tr><td><code class="sha">f665a00138</code></td><td>feat(auth): cookie-bound password reset flow for on-prem (SECURITY-1381)</td></tr>
+  </table>
+  <h3>What to test (5 changed files → screens/areas · compare on https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud vs https://hyperexecute-onprem-after-fae34c-3002.hyperexecute.cloud)</h3>
+  <table><tr><th>file</th><th>change</th><th>what to test</th></tr>
+  <tr><td><code>src/api/mfaService.ts</code></td><td>M <span class="add">+1</span>/<span class="del">-1</span></td><td>API/service layer — verify network-backed screens</td></tr>
+  <tr><td><code>src/components/auth/ForgotPassword/ForgotPassword.onprem.tsx</code></td><td>M <span class="add">+2</span>/<span class="del">-3</span></td><td>component: auth (verify screens using it)</td></tr>
+  <tr><td><code>src/components/auth/PasswordPin/PasswordPin.onprem.tsx</code></td><td>M <span class="add">+7</span>/<span class="del">-15</span></td><td>component: auth (verify screens using it)</td></tr>
+  <tr><td><code>src/components/user/Profile/index.css</code></td><td>M <span class="add">+5</span>/<span class="del">-1</span></td><td>component: user (verify screens using it)</td></tr>
+  <tr><td><code>src/components/user/Profile/index.tsx</code></td><td>M <span class="add">+2</span>/<span class="del">-1</span></td><td>component: user (verify screens using it)</td></tr>
+  </table>
+</div>
+<div class="batch leg-prod">
+  <div class="hdr"><span class="tag prod">Production</span> &nbsp;<b>2026-07-13</b> &nbsp;<code class="sha">b28c010a1e</code> → <code class="sha">7025c87dd4</code></div>
+  <div class="mut">12 commit(s) · 15 changed file(s) · upstream tip <code class="sha">d381be843a</code> · <b>test on:</b> 3001 (before) vs 3003 (after)</div>
+  <div class="mut" style="margin:4px 0 2px">subject: Merge remote-tracking branch 'upstream/prod' into prod-onprem-sync</div>
+  <h3>Commits introduced (12)</h3>
+  <table><tr><th>commit</th><th>subject</th></tr>
+  <tr><td><code class="sha">d381be843a</code></td><td>Merge pull request #3740 from rachit-lambdatest/cherry-pick/TE-17979-scim-team-rbac-prod</td></tr>
+  <tr><td><code class="sha">42fc15510f</code></td><td>fix(scim): show Team mapping option when RBAC-cloud is enabled</td></tr>
+  <tr><td><code class="sha">25ecbae4b3</code></td><td>Merge pull request #3736 from vasu-lt/release-8july26</td></tr>
+  <tr><td><code class="sha">7cd16fc912</code></td><td>feat(sla-alerts): cap emails at 50 and webhooks at 20 [TE-20457]</td></tr>
+  <tr><td><code class="sha">2c7cef5c4f</code></td><td>TE-19655: refetch alerts config after PUT to update last modified info</td></tr>
+  <tr><td><code class="sha">f38bc069d2</code></td><td>TE-19655: Slack integration fixes, responsive grid, last modified, footer layout</td></tr>
+  <tr><td><code class="sha">c20a5b13a4</code></td><td>TE-19655: fix Slack channel mapping, loading state, and fallback UX</td></tr>
+  <tr><td><code class="sha">3d682aa6d0</code></td><td>TE-19655: fix LTSelect channel dropdown and default selection</td></tr>
+  <tr><td><code class="sha">0381543e92</code></td><td>TE-19655: fix Slack channel dropdown and add not-integrated fallback</td></tr>
+  <tr><td><code class="sha">b67da29f4d</code></td><td>TE-19655: add Alerts &amp; Notifications for App Profiling SLA thresholds</td></tr>
+  <tr><td><code class="sha">28957e8ae4</code></td><td>Merge pull request #3722 from rahulgupta-02/SECURITY-1381</td></tr>
+  <tr><td><code class="sha">211a326933</code></td><td>Revert "Revert "SECURITY-1381: cookie-bound password reset flow (frontend)""</td></tr>
+  </table>
+  <h3>What to test (15 changed files → screens/areas · compare on https://before-fae34c-3001.lambdatest.com vs https://after-fae34c-3003.lambdatest.com)</h3>
+  <table><tr><th>file</th><th>change</th><th>what to test</th></tr>
+  <tr><td><code>src/api/authService.ts</code></td><td>M <span class="add">+31</span>/<span class="del">-33</span></td><td>API/service layer — verify network-backed screens</td></tr>
+  <tr><td><code>src/api/preferencesService.ts</code></td><td>M <span class="add">+119</span>/<span class="del">-0</span></td><td>API/service layer — verify network-backed screens</td></tr>
+  <tr><td><code>src/components/auth/ForgotPassword/ForgotPassword.cloud.tsx</code></td><td>M <span class="add">+2</span>/<span class="del">-3</span></td><td>component: auth (verify screens using it)</td></tr>
+  <tr><td><code>src/components/auth/ForgotPassword/OldForgotPassword.tsx</code></td><td>D <span class="add">+0</span>/<span class="del">-172</span></td><td>component: auth (verify screens using it)</td></tr>
+  <tr><td><code>src/components/auth/PasswordPin/OldPasswordPin.tsx</code></td><td>D <span class="add">+0</span>/<span class="del">-257</span></td><td>component: auth (verify screens using it)</td></tr>
+  <tr><td><code>src/components/auth/PasswordPin/PasswordPin.cloud.tsx</code></td><td>M <span class="add">+8</span>/<span class="del">-16</span></td><td>component: auth (verify screens using it)</td></tr>
+  <tr><td><code>src/components/preferences/OrganizationPreferences/AppProfilingSLAThresholds/AlertsNotifications.tsx</code></td><td>A <span class="add">+615</span>/<span class="del">-0</span></td><td>component: preferences (verify screens using it)</td></tr>
+  <tr><td><code>src/components/preferences/OrganizationPreferences/AppProfilingSLAThresholds/index.tsx</code></td><td>M <span class="add">+10</span>/<span class="del">-12</span></td><td>component: preferences (verify screens using it)</td></tr>
+  <tr><td><code>src/components/scim/EditMappingModal.tsx</code></td><td>M <span class="add">+7</span>/<span class="del">-2</span></td><td>component: scim (verify screens using it)</td></tr>
+  <tr><td><code>src/components/scim/MappingRuleModal.tsx</code></td><td>M <span class="add">+7</span>/<span class="del">-2</span></td><td>component: scim (verify screens using it)</td></tr>
+  <tr><td><code>src/containers/ResetPassword.tsx</code></td><td>M <span class="add">+52</span>/<span class="del">-41</span></td><td>screen: /resetpassword</td></tr>
+  <tr><td><code>src/containers/ResetPasswordOld.tsx</code></td><td>D <span class="add">+0</span>/<span class="del">-184</span></td><td>screen: /resetpasswordold</td></tr>
+  <tr><td><code>src/containers/ScimGroupsPage.tsx</code></td><td>M <span class="add">+1</span>/<span class="del">-1</span></td><td>screen: /scimgroupspage</td></tr>
+  <tr><td><code>src/models/preferences.ts</code></td><td>M <span class="add">+36</span>/<span class="del">-0</span></td><td>verify affected behavior</td></tr>
+  <tr><td><code>src/routes/index.tsx</code></td><td>M <span class="add">+10</span>/<span class="del">-2</span></td><td>screen: /index</td></tr>
+  </table>
+</div>
+<div class="batch leg-prod">
+  <div class="hdr"><span class="tag prod">Production</span> &nbsp;<b>2026-07-04</b> &nbsp;<code class="sha">1e7c63f053</code> → <code class="sha">eea8c5a7bc</code></div>
+  <div class="mut">5 commit(s) · 18 changed file(s) · upstream tip <code class="sha">35db24a2ff</code> · <b>test on:</b> 3001 (before) vs 3003 (after)</div>
+  <div class="mut" style="margin:4px 0 2px">subject: merge(upstream/prod): resync prod-onprem-sync — 5 prod commits</div>
+  <h3>Commits introduced (5)</h3>
+  <table><tr><th>commit</th><th>subject</th></tr>
+  <tr><td><code class="sha">35db24a2ff</code></td><td>Merge pull request #3724 from riteshlambda/prod</td></tr>
+  <tr><td><code class="sha">1b6c958971</code></td><td>Merge pull request #3725 from surishubham/prod</td></tr>
+  <tr><td><code class="sha">c3b9bee068</code></td><td>Merge pull request #3723 from surishubham/sync</td></tr>
+  <tr><td><code class="sha">c3413067d3</code></td><td>Merge pull request #3720 from surishubham/sync</td></tr>
+  <tr><td><code class="sha">a6e287d73d</code></td><td>Merge pull request #3698 from riteshlambda/ritesh/suborg-server-side-pagination</td></tr>
+  </table>
+  <h3>What to test (18 changed files → screens/areas · compare on https://before-fae34c-3001.lambdatest.com vs https://after-fae34c-3003.lambdatest.com)</h3>
+  <table><tr><th>file</th><th>change</th><th>what to test</th></tr>
+  <tr><td><code>src/components/auth/ProfileSetup/index.tsx</code></td><td>M <span class="add">+9</span>/<span class="del">-4</span></td><td>component: auth (verify screens using it)</td></tr>
+  <tr><td><code>src/components/auth/SignupForm/index.tsx</code></td><td>M <span class="add">+26</span>/<span class="del">-2</span></td><td>component: auth (verify screens using it)</td></tr>
+  <tr><td><code>src/components/security/tunnel-security/TunnelDomainsList/index.tsx</code></td><td>M <span class="add">+3</span>/<span class="del">-3</span></td><td>component: security (verify screens using it)</td></tr>
+  <tr><td><code>src/components/security/tunnel-security/TunnelSelectedUsersList/index.tsx</code></td><td>M <span class="add">+9</span>/<span class="del">-9</span></td><td>component: security (verify screens using it)</td></tr>
+  <tr><td><code>src/components/user/EachTeamMember/ApproverProjectsDrawer.tsx</code></td><td>M <span class="add">+1</span>/<span class="del">-1</span></td><td>component: user (verify screens using it)</td></tr>
+  <tr><td><code>src/components/user/GroupList/GroupList.cloud.tsx</code></td><td>M <span class="add">+2</span>/<span class="del">-0</span></td><td>component: user (verify screens using it)</td></tr>
+  <tr><td><code>src/components/user/OrganizationTeams/RbacOrganizationTeams.cloud.tsx</code></td><td>M <span class="add">+1</span>/<span class="del">-1</span></td><td>component: user (verify screens using it)</td></tr>
+  <tr><td><code>src/components/user/PrivateCloudDevices/index.tsx</code></td><td>M <span class="add">+1</span>/<span class="del">-1</span></td><td>component: user (verify screens using it)</td></tr>
+  <tr><td><code>src/components/user/ProfileForm/index.tsx</code></td><td>M <span class="add">+27</span>/<span class="del">-14</span></td><td>component: user (verify screens using it)</td></tr>
+  <tr><td><code>src/components/user/Service/Service.cloud.tsx</code></td><td>M <span class="add">+96</span>/<span class="del">-118</span></td><td>component: user (verify screens using it)</td></tr>
+  <tr><td><code>src/components/user/Service/rbacService.tsx</code></td><td>M <span class="add">+1</span>/<span class="del">-1</span></td><td>component: user (verify screens using it)</td></tr>
+  <tr><td><code>src/components/user/SupportAccessTable/index.tsx</code></td><td>M <span class="add">+1</span>/<span class="del">-1</span></td><td>component: user (verify screens using it)</td></tr>
+  <tr><td><code>src/components/user/Team/Team.cloud.tsx</code></td><td>M <span class="add">+84</span>/<span class="del">-118</span></td><td>component: user (verify screens using it)</td></tr>
+  <tr><td><code>src/components/user/Team/rbacTeams.cloud.tsx</code></td><td>M <span class="add">+2</span>/<span class="del">-2</span></td><td>component: user (verify screens using it)</td></tr>
+  <tr><td><code>src/components/user/TeamList/TeamList.cloud.tsx</code></td><td>M <span class="add">+25</span>/<span class="del">-25</span></td><td>component: user (verify screens using it)</td></tr>
+  <tr><td><code>src/components/user/TeamsListSubOrg/rbacTeamList.tsx</code></td><td>M <span class="add">+16</span>/<span class="del">-14</span></td><td>component: user (verify screens using it)</td></tr>
+  <tr><td><code>src/components/user/Users/users.cloud.tsx</code></td><td>M <span class="add">+0</span>/<span class="del">-1</span></td><td>component: user (verify screens using it)</td></tr>
+  <tr><td><code>src/routes/index.tsx</code></td><td>M <span class="add">+9</span>/<span class="del">-0</span></td><td>screen: /index</td></tr>
+  </table>
+</div>
+<div class="batch leg-onprem">
+  <div class="hdr"><span class="tag onprem">On-Premises</span> &nbsp;<b>2026-07-02</b> &nbsp;<code class="sha">865b7f699a</code> → <code class="sha">bfbc2a7230</code></div>
+  <div class="mut">50 commit(s) · 16 changed file(s) · upstream tip <code class="sha">53bb141f73</code> · <b>test on:</b> 3000 (before) vs 3002 (after)</div>
+  <div class="mut" style="margin:4px 0 2px">subject: merge(on-prem): resync upstream/on-prem into prod-onprem-sync</div>
+  <h3>Commits introduced (50)</h3>
+  <table><tr><th>commit</th><th>subject</th></tr>
+  <tr><td><code class="sha">53bb141f73</code></td><td>Merge pull request #3714 from surishubham/fix/csv-encoding-onprem</td></tr>
+  <tr><td><code class="sha">7c31a5dfe4</code></td><td>fix: replace HTML encoding with proper CSV injection prevention in sanitizeField</td></tr>
+  <tr><td><code class="sha">4d5abfc097</code></td><td>Merge pull request #3711 from jaipahal-lt/TE-19604</td></tr>
+  <tr><td><code class="sha">41f7117ee5</code></td><td>refactor: update global policies UI and logic</td></tr>
+  <tr><td><code class="sha">b47fca66be</code></td><td>Merge pull request #3705 from shivamuniyal-5510/TE-19278</td></tr>
+  <tr><td><code class="sha">26953f050c</code></td><td>fix(security): upgrade nginx 1.26.3 → 1.30.3 to fix CVE-2026-49975</td></tr>
+  <tr><td><code class="sha">9f7bd769cd</code></td><td>Merge pull request #3699 from rahul-lt/on-prem</td></tr>
+  <tr><td><code class="sha">14374a110f</code></td><td>Merge pull request #3702 from jaipahal-lt/TE-18451-on-prem-v3</td></tr>
+  <tr><td><code class="sha">d23c80ced2</code></td><td>TE-18451 (on-prem): strip hye- FF prefix + LTTag Beta tag</td></tr>
+  <tr><td><code class="sha">3207fc4e7c</code></td><td>simplification</td></tr>
+  <tr><td><code class="sha">446608b12f</code></td><td>Merge pull request #1 from rahul-lt/TE-17787-queue-mapping-onprem-env-selector</td></tr>
+  <tr><td><code class="sha">f9041148f6</code></td><td>TE-17787: onpremEnv environment selector for Linux queue mapping</td></tr>
+  <tr><td><code class="sha">b02c7fcb89</code></td><td>docs: spec for Linux queue mapping onpremEnv selector (TE-17787)</td></tr>
+  <tr><td><code class="sha">16f2c76f68</code></td><td>Merge pull request #3692 from rahul-lt/on-prem</td></tr>
+  <tr><td><code class="sha">e0ee845e68</code></td><td>max change</td></tr>
+  <tr><td><code class="sha">9718fe0441</code></td><td>Bug Fixes</td></tr>
+  <tr><td><code class="sha">4d8475b94a</code></td><td>Merge pull request #3689 from jaipahal-lt/maxretries-cap-onprem</td></tr>
+  <tr><td><code class="sha">96920498d8</code></td><td>[TE-18028] Drop the maxRetries save-block validation (input clamp + BE cover it)</td></tr>
+  <tr><td><code class="sha">85dee4741a</code></td><td>[TE-18028] Clamp maxRetries min/max inputs to the ceiling on blur (UI)</td></tr>
+  <tr><td><code class="sha">03c0a53eb6</code></td><td>[TE-18028] Cap maxRetries policy constraint min/max to [0,5] (UI)</td></tr>
+  <tr><td><code class="sha">3c09a8f91f</code></td><td>Merge pull request #3673 from jaipahal-lt/TE-18451-on-prem</td></tr>
+  <tr><td><code class="sha">11bb372617</code></td><td>TE-18451: Add-command plus icon explicit blue fill</td></tr>
+  <tr><td><code class="sha">44a14b2c9a</code></td><td>TE-18451: severity colors from LTTheme not Primer theme (komal)</td></tr>
+  <tr><td><code class="sha">12f5769fea</code></td><td>TE-18451: fix LTButton leadingIcon crash (pass element not component)</td></tr>
+  <tr><td><code class="sha">5d02d46f0e</code></td><td>TE-18451: review nits — optional chaining + severity colors from theme</td></tr>
+  <tr><td><code class="sha">71baf709fc</code></td><td>TE-18451: adopt LTButton (Add command) + LTCheckbox (project option) + token sizing</td></tr>
+  <tr><td><code class="sha">2880ddbb52</code></td><td>Merge on-prem into TE-18451-on-prem; resolve setTabs deps (union: showKaneAi + addGitIntegration + showGlobalPolicies)</td></tr>
+  <tr><td><code class="sha">680e9a524f</code></td><td>TE-18451: address review nits r3 (Record&lt;OsKey&gt;, &amp;&amp; cell, useCallback)</td></tr>
+  <tr><td><code class="sha">b8b016c3dc</code></td><td>TE-18451: sync Global Policies UI to on-prem (validated on LT 0.1.27)</td></tr>
+  <tr><td><code class="sha">1529b4c6fd</code></td><td>TE-18451: use LTSwitch SQUARE variant (medium pill) for policy toggles</td></tr>
+  <tr><td><code class="sha">b9ffb21e7d</code></td><td>TE-18451: show Enabled/Disabled label next to the policy status switch</td></tr>
+  <tr><td><code class="sha">825d3d696e</code></td><td>TE-18451: Primer IconButton -&gt; LTIconButton (command remove + table actions)</td></tr>
+  <tr><td><code class="sha">523de1b6d0</code></td><td>TE-18451: migrate globalPolicies UI to LT components (LT-first policy)</td></tr>
+  <tr><td><code class="sha">9c93af899b</code></td><td>TE-18451: address PR round-2 (sandeepKumarLambdatest)</td></tr>
+  <tr><td><code class="sha">59e0bf6f04</code></td><td>TE-18451: address PR review (sandeepKumarLambdatest)</td></tr>
+  <tr><td><code class="sha">329335e094</code></td><td>TE-18451: delete modal button label 'Toggle off'</td></tr>
+  <tr><td><code class="sha">66017e1b82</code></td><td>TE-18451: drawer content min-width 560 (was 480)</td></tr>
+  <tr><td><code class="sha">e8780c6f82</code></td><td>TE-18451: delete modal — plain toggle-off text + 'Toggle OFF', only when policy is on</td></tr>
+  <tr><td><code class="sha">ed3281074d</code></td><td>TE-18451: drawer content min-width 480 (was 720), max stays 720</td></tr>
+  <tr><td><code class="sha">a23ba70ed1</code></td><td>TE-18451: fix invalid JSX comment that broke the build (min-w drawer change)</td></tr>
+  <tr><td><code class="sha">c8d9096190</code></td><td>TE-18451: drawer scrolls horizontally on narrow windows instead of compressing</td></tr>
+  <tr><td><code class="sha">3c38ef9759</code></td><td>TE-18451: responsive compliance for policy list + drawer</td></tr>
+  <tr><td><code class="sha">0aa0749ced</code></td><td>TE-18451: cap policy name at 100 chars (was 128)</td></tr>
+  <tr><td><code class="sha">666f2ccdfa</code></td><td>TE-18451: cap policy name at 128 chars</td></tr>
+  <tr><td><code class="sha">22a737d057</code></td><td>TE-18451: rename FF to hye-global-policies-enabled</td></tr>
+  <tr><td><code class="sha">cce1444930</code></td><td>TE-18451: fix Scope 'undefined' placeholder + move disabled-Save reason to hover</td></tr>
+  <tr><td><code class="sha">498913d074</code></td><td>TE-18451: require explicit project scope + show why Save is disabled</td></tr>
+  <tr><td><code class="sha">597e60c5a4</code></td><td>TE-18451: align Global Policies FE validation messages with BE table (TE-17960)</td></tr>
+  <tr><td><code class="sha">b0f98c823c</code></td><td>TE-18451: gate Global Policies behind FF + use env HE host</td></tr>
+  <tr><td><code class="sha">466b2533ed</code></td><td>TE-18451: HyperExecute Global Policies admin UI (dev)</td></tr>
+  </table>
+  <h3>What to test (16 changed files → screens/areas · compare on https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud vs https://hyperexecute-onprem-after-fae34c-3002.hyperexecute.cloud)</h3>
+  <table><tr><th>file</th><th>change</th><th>what to test</th></tr>
+  <tr><td><code>.env.hyptester</code></td><td>A <span class="add">+53</span>/<span class="del">-0</span></td><td>config — verify build/runtime behavior unchanged</td></tr>
+  <tr><td><code>.gitignore</code></td><td>M <span class="add">+1</span>/<span class="del">-0</span></td><td>verify affected behavior</td></tr>
+  <tr><td><code>Dockerfile</code></td><td>M <span class="add">+2</span>/<span class="del">-2</span></td><td>verify affected behavior</td></tr>
+  <tr><td><code>docs/superpowers/specs/2026-06-25-queue-mapping-onprem-env-selector-design.md</code></td><td>A <span class="add">+93</span>/<span class="del">-0</span></td><td>config — verify build/runtime behavior unchanged</td></tr>
+  <tr><td><code>src/api/organizationService.ts</code></td><td>M <span class="add">+32</span>/<span class="del">-8</span></td><td>API/service layer — verify network-backed screens</td></tr>
+  <tr><td><code>src/components/preferences/OrganizationPreferences/HyperExecutePreferences/globalPolicies/AddPolicy.tsx</code></td><td>M <span class="add">+8</span>/<span class="del">-4</span></td><td>component: preferences (verify screens using it)</td></tr>
+  <tr><td><code>src/components/preferences/OrganizationPreferences/HyperExecutePreferences/globalPolicies/policyConfig.ts</code></td><td>M <span class="add">+10</span>/<span class="del">-0</span></td><td>component: preferences (verify screens using it)</td></tr>
+  <tr><td><code>src/components/preferences/OrganizationPreferences/HyperExecutePreferences/queue-mapping/AddImageMapping.tsx</code></td><td>M <span class="add">+68</span>/<span class="del">-21</span></td><td>component: preferences (verify screens using it)</td></tr>
+  <tr><td><code>src/components/preferences/OrganizationPreferences/HyperExecutePreferences/queue-mapping/EnvironmentSelect.tsx</code></td><td>A <span class="add">+47</span>/<span class="del">-0</span></td><td>component: preferences (verify screens using it)</td></tr>
+  <tr><td><code>src/components/preferences/OrganizationPreferences/HyperExecutePreferences/queue-mapping/QueueMapping.tsx</code></td><td>M <span class="add">+22</span>/<span class="del">-4</span></td><td>component: preferences (verify screens using it)</td></tr>
+  <tr><td><code>src/components/preferences/OrganizationPreferences/HyperExecutePreferences/queue-mapping/useEnvironments.ts</code></td><td>A <span class="add">+25</span>/<span class="del">-0</span></td><td>component: preferences (verify screens using it)</td></tr>
+  <tr><td><code>src/components/user/EachRolePermissions/index.tsx</code></td><td>M <span class="add">+3</span>/<span class="del">-10</span></td><td>component: user (verify screens using it)</td></tr>
+  <tr><td><code>src/components/user/RolesList/index.tsx</code></td><td>M <span class="add">+17</span>/<span class="del">-9</span></td><td>component: user (verify screens using it)</td></tr>
+  <tr><td><code>src/components/utils/LumsHeaderMembers/index.tsx</code></td><td>M <span class="add">+6</span>/<span class="del">-0</span></td><td>component: utils (verify screens using it)</td></tr>
+  <tr><td><code>src/containers/OrganizationSettings.onprem.tsx</code></td><td>M <span class="add">+44</span>/<span class="del">-4</span></td><td>screen: /organizationsettings.onprem</td></tr>
+  <tr><td><code>src/hooks/constants/featureFlags.ts</code></td><td>M <span class="add">+4</span>/<span class="del">-1</span></td><td>verify affected behavior</td></tr>
+  </table>
+</div>
+<div class="batch leg-prod">
+  <div class="hdr"><span class="tag prod">Production</span> &nbsp;<b>2026-07-02</b> &nbsp;<code class="sha">01d6f238ea</code> → <code class="sha">865b7f699a</code></div>
+  <div class="mut">31 commit(s) · 27 changed file(s) · upstream tip <code class="sha">2c51c8e9dd</code> · <b>test on:</b> 3001 (before) vs 3003 (after)</div>
+  <div class="mut" style="margin:4px 0 2px">subject: merge(prod): resync upstream/prod into prod-onprem-sync</div>
+  <h3>Commits introduced (31)</h3>
+  <table><tr><th>commit</th><th>subject</th></tr>
+  <tr><td><code class="sha">2c51c8e9dd</code></td><td>Merge pull request #3719 from Akshilt44/TE-19438-prod</td></tr>
+  <tr><td><code class="sha">c348f28072</code></td><td>update: lock file</td></tr>
+  <tr><td><code class="sha">a2496b1574</code></td><td>Merge pull request #3717 from Akshilt44/TE-19438-prod</td></tr>
+  <tr><td><code class="sha">d86233ac52</code></td><td>Merge pull request #3718 from jaipahal-lt/TE-19638-prod</td></tr>
+  <tr><td><code class="sha">36599e6bff</code></td><td>TE-19638: Global Policies UI fixes (Fail Fast cap, Project Scope mandatory, default-OS fallback, validation message)</td></tr>
+  <tr><td><code class="sha">98527529b4</code></td><td>refactor: improve CSV formula injection prevention in sanitizeField function</td></tr>
+  <tr><td><code class="sha">a07ec4d213</code></td><td>TE-19438: restore ErrorBoundary componentDidCatch sendLog call</td></tr>
+  <tr><td><code class="sha">6fce65dbf0</code></td><td>TE-19438: use lt-components for ErrorBoundary fallback UI</td></tr>
+  <tr><td><code class="sha">fd0f964453</code></td><td>TE-19438: migrate frontend-logger from SumoLogic to Datadog</td></tr>
+  <tr><td><code class="sha">9e4f330387</code></td><td>Merge pull request #3703 from jaipahal-lt/release/25-06-2026</td></tr>
+  <tr><td><code class="sha">c3b28c6f96</code></td><td>TE-18451 (sync): add LTTag Beta tag to Global Policies (sidebar + heading)</td></tr>
+  <tr><td><code class="sha">ff06e169f8</code></td><td>Merge pull request #3694 from surishubham/prod</td></tr>
+  <tr><td><code class="sha">4e0cabfa52</code></td><td>Merge pull request #3696 from riteshlambda/prod</td></tr>
+  <tr><td><code class="sha">f516774549</code></td><td>Merge pull request #3697 from jaipahal-lt/release/24June2026</td></tr>
+  <tr><td><code class="sha">bffbb43d56</code></td><td>Merge pull request #3688 from jaipahal-lt/maxretries-cap-stage</td></tr>
+  <tr><td><code class="sha">8a042001dd</code></td><td>Merge pull request #3672 from jaipahal-lt/TE-18451</td></tr>
+  <tr><td><code class="sha">ea0c92bac6</code></td><td>[Ritesh] - SubOrg - move pagination/search params into getAllSubOrgs service</td></tr>
+  <tr><td><code class="sha">21dcabf61a</code></td><td>[Ritesh] - SubOrg - switch to server-side pagination with debounced search</td></tr>
+  <tr><td><code class="sha">3ea3c609c5</code></td><td>Merge pull request #3691 from surishubham/sync</td></tr>
+  <tr><td><code class="sha">c1cd017877</code></td><td>Merge pull request #3648 from surishubham/sync</td></tr>
+  <tr><td><code class="sha">250aaac7f7</code></td><td>Merge pull request #3684 from surishubham/prod</td></tr>
+  <tr><td><code class="sha">3ed2f1cd9f</code></td><td>Merge pull request #3681 from srivastavaayush1611LT/deps/bump-lt-common-header-0.3.88-prod</td></tr>
+  <tr><td><code class="sha">8d8c392e42</code></td><td>Merge pull request #3687 from surishubham/sync</td></tr>
+  <tr><td><code class="sha">b40746e67f</code></td><td>Merge pull request #3686 from surishubham/sync</td></tr>
+  <tr><td><code class="sha">3a07b2ab92</code></td><td>Enhance image display: set max width and add alt text for Kane CLI image</td></tr>
+  <tr><td><code class="sha">ef62c07958</code></td><td>Merge pull request #3683 from surishubham/sync</td></tr>
+  <tr><td><code class="sha">546eafed51</code></td><td>Merge pull request #3682 from surishubham/sync</td></tr>
+  <tr><td><code class="sha">e259ffcac2</code></td><td>Merge pull request #3680 from surishubham/sync</td></tr>
+  <tr><td><code class="sha">d10ad0459e</code></td><td>deps: bump lt-common-header to 0.3.88</td></tr>
+  <tr><td><code class="sha">7c3e0dee66</code></td><td>Merge pull request #3676 from sandeepKumarLambdatest/te10313-adaptive-xaxis-toggle-prod</td></tr>
+  <tr><td><code class="sha">01f48799ef</code></td><td>Org Dashboard Settings: Adaptive X-axis Labels toggle (TE-10313) (#3671)</td></tr>
+  </table>
+  <h3>What to test (27 changed files → screens/areas · compare on https://before-fae34c-3001.lambdatest.com vs https://after-fae34c-3003.lambdatest.com)</h3>
+  <table><tr><th>file</th><th>change</th><th>what to test</th></tr>
+  <tr><td><code>package-lock.json</code></td><td>M <span class="add">+73</span>/<span class="del">-7</span></td><td>config — verify build/runtime behavior unchanged</td></tr>
+  <tr><td><code>package.json</code></td><td>M <span class="add">+2</span>/<span class="del">-1</span></td><td>config — verify build/runtime behavior unchanged</td></tr>
+  <tr><td><code>src/api/organizationService.ts</code></td><td>M <span class="add">+91</span>/<span class="del">-0</span></td><td>API/service layer — verify network-backed screens</td></tr>
+  <tr><td><code>src/api/preferencesService.ts</code></td><td>M <span class="add">+5</span>/<span class="del">-5</span></td><td>API/service layer — verify network-backed screens</td></tr>
+  <tr><td><code>src/api/subOrgService.ts</code></td><td>M <span class="add">+11</span>/<span class="del">-2</span></td><td>API/service layer — verify network-backed screens</td></tr>
+  <tr><td><code>src/assets/images/kaneCli.svg</code></td><td>A <span class="add">+176</span>/<span class="del">-0</span></td><td>verify affected behavior</td></tr>
+  <tr><td><code>src/components/dashboard/DashboardScreenRevamp/DiscoverMore/index.tsx</code></td><td>M <span class="add">+20</span>/<span class="del">-2</span></td><td>component: dashboard (verify screens using it)</td></tr>
+  <tr><td><code>src/components/preferences/OrganizationPreferences/HyperExecutePreferences/globalPolicies/AddPolicy.tsx</code></td><td>A <span class="add">+949</span>/<span class="del">-0</span></td><td>component: preferences (verify screens using it)</td></tr>
+  <tr><td><code>src/components/preferences/OrganizationPreferences/HyperExecutePreferences/globalPolicies/PolicyToggle.tsx</code></td><td>A <span class="add">+26</span>/<span class="del">-0</span></td><td>component: preferences (verify screens using it)</td></tr>
+  <tr><td><code>src/components/preferences/OrganizationPreferences/HyperExecutePreferences/globalPolicies/ProjectAutoCompleter.tsx</code></td><td>A <span class="add">+262</span>/<span class="del">-0</span></td><td>component: preferences (verify screens using it)</td></tr>
+  <tr><td><code>src/components/preferences/OrganizationPreferences/HyperExecutePreferences/globalPolicies/index.tsx</code></td><td>A <span class="add">+186</span>/<span class="del">-0</span></td><td>component: preferences (verify screens using it)</td></tr>
+  <tr><td><code>src/components/preferences/OrganizationPreferences/HyperExecutePreferences/globalPolicies/interface.ts</code></td><td>A <span class="add">+37</span>/<span class="del">-0</span></td><td>component: preferences (verify screens using it)</td></tr>
+  <tr><td><code>src/components/preferences/OrganizationPreferences/HyperExecutePreferences/globalPolicies/osIcons.tsx</code></td><td>A <span class="add">+46</span>/<span class="del">-0</span></td><td>component: preferences (verify screens using it)</td></tr>
+  <tr><td><code>src/components/preferences/OrganizationPreferences/HyperExecutePreferences/globalPolicies/policyConfig.ts</code></td><td>A <span class="add">+292</span>/<span class="del">-0</span></td><td>component: preferences (verify screens using it)</td></tr>
+  <tr><td><code>src/components/preferences/OrganizationPreferences/HyperExecutePreferences/globalPolicies/style.css</code></td><td>A <span class="add">+50</span>/<span class="del">-0</span></td><td>component: preferences (verify screens using it)</td></tr>
+  <tr><td><code>src/components/preferences/OrganizationPreferences/HyperExecutePreferences/globalPolicies/table.tsx</code></td><td>A <span class="add">+400</span>/<span class="del">-0</span></td><td>component: preferences (verify screens using it)</td></tr>
+  <tr><td><code>src/components/preferences/OrganizationPreferences/dashboardSettings/index.tsx</code></td><td>M <span class="add">+20</span>/<span class="del">-0</span></td><td>component: preferences (verify screens using it)</td></tr>
+  <tr><td><code>src/components/user/OrganizationTeams/OrganizationTeams.cloud.tsx</code></td><td>M <span class="add">+12</span>/<span class="del">-4</span></td><td>component: user (verify screens using it)</td></tr>
+  <tr><td><code>src/components/user/SubOrgList/index.tsx</code></td><td>M <span class="add">+29</span>/<span class="del">-49</span></td><td>component: user (verify screens using it)</td></tr>
+  <tr><td><code>src/components/user/TeamsModal/index.cloud.tsx</code></td><td>M <span class="add">+462</span>/<span class="del">-592</span></td><td>component: user (verify screens using it)</td></tr>
+  <tr><td><code>src/components/utils/ErrorBoundary/index.css</code></td><td>M <span class="add">+2</span>/<span class="del">-9</span></td><td>component: utils (verify screens using it)</td></tr>
+  <tr><td><code>src/components/utils/ErrorBoundary/index.tsx</code></td><td>M <span class="add">+23</span>/<span class="del">-5</span></td><td>component: utils (verify screens using it)</td></tr>
+  <tr><td><code>src/containers/OrganizationSettings.cloud.tsx</code></td><td>M <span class="add">+37</span>/<span class="del">-3</span></td><td>screen: /organizationsettings.cloud</td></tr>
+  <tr><td><code>src/containers/SubOrg.tsx</code></td><td>M <span class="add">+58</span>/<span class="del">-47</span></td><td>screen: /suborg</td></tr>
+  <tr><td><code>src/hooks/constants/featureFlags.ts</code></td><td>M <span class="add">+3</span>/<span class="del">-0</span></td><td>verify affected behavior</td></tr>
+  <tr><td><code>src/react-app-env.d.ts</code></td><td>M <span class="add">+2</span>/<span class="del">-0</span></td><td>config — verify build/runtime behavior unchanged</td></tr>
+  <tr><td><code>src/utils/helpers.ts</code></td><td>M <span class="add">+7</span>/<span class="del">-13</span></td><td>verify affected behavior</td></tr>
+  </table>
+</div>
+<div class="batch leg-onprem">
+  <div class="hdr"><span class="tag onprem">On-Premises</span> &nbsp;<b>2026-06-18</b> &nbsp;<code class="sha">7b8f2fd268</code> → <code class="sha">6f3c0531f3</code></div>
+  <div class="mut">8 commit(s) · 5 changed file(s) · upstream tip <code class="sha">3db3bc8178</code> · <b>test on:</b> 3000 (before) vs 3002 (after)</div>
+  <div class="mut" style="margin:4px 0 2px">subject: Merge remote-tracking branch 'upstream/on-prem' into prod-onprem-sync</div>
+  <h3>Commits introduced (8)</h3>
+  <table><tr><th>commit</th><th>subject</th></tr>
+  <tr><td><code class="sha">3db3bc8178</code></td><td>Merge pull request #3659 from sandeepKumarLambdatest/TE-17066-projectname-asterisk-error-align</td></tr>
+  <tr><td><code class="sha">71b173374b</code></td><td>fix(projects): widen inline error icon-to-message gap (mr-3 -&gt; mr-8)</td></tr>
+  <tr><td><code class="sha">4184361dd9</code></td><td>fix(projects): widen inline error icon-to-message gap (mr-2 -&gt; mr-3)</td></tr>
+  <tr><td><code class="sha">0061870d06</code></td><td>fix(projects): center inline error icon + restore icon-message gap across input fields</td></tr>
+  <tr><td><code class="sha">d69a5c006b</code></td><td>fix(projects): tighten inline error icon-to-message spacing</td></tr>
+  <tr><td><code class="sha">241f1407f0</code></td><td>fix(projects): mandatory Project Name asterisk on Add form + center error icon</td></tr>
+  <tr><td><code class="sha">c291fee52b</code></td><td>Merge pull request #3656 from rahul-lt/on-prem</td></tr>
+  <tr><td><code class="sha">b9f08080da</code></td><td>Search fixes</td></tr>
+  </table>
+  <h3>What to test (5 changed files → screens/areas · compare on https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud vs https://hyperexecute-onprem-after-fae34c-3002.hyperexecute.cloud)</h3>
+  <table><tr><th>file</th><th>change</th><th>what to test</th></tr>
+  <tr><td><code>src/components/user/TeamsModal/rbacTeamsModal.onprem.tsx</code></td><td>M <span class="add">+22</span>/<span class="del">-8</span></td><td>component: user (verify screens using it)</td></tr>
+  <tr><td><code>src/containers/Projects/Common/Add.tsx</code></td><td>M <span class="add">+2</span>/<span class="del">-2</span></td><td>screen: /projects</td></tr>
+  <tr><td><code>src/containers/Projects/Common/Edit.tsx</code></td><td>M <span class="add">+2</span>/<span class="del">-2</span></td><td>screen: /projects</td></tr>
+  <tr><td><code>src/containers/Projects/Common/InputField.tsx</code></td><td>M <span class="add">+2</span>/<span class="del">-2</span></td><td>screen: /projects</td></tr>
+  <tr><td><code>src/containers/Projects/Common/constant.ts</code></td><td>M <span class="add">+1</span>/<span class="del">-1</span></td><td>screen: /projects</td></tr>
+  </table>
+</div>
+<div class="batch leg-prod">
+  <div class="hdr"><span class="tag prod">Production</span> &nbsp;<b>2026-06-18</b> &nbsp;<code class="sha">064881a3b6</code> → <code class="sha">7b8f2fd268</code></div>
+  <div class="mut">17 commit(s) · 16 changed file(s) · upstream tip <code class="sha">c48506104b</code> · <b>test on:</b> 3001 (before) vs 3003 (after)</div>
+  <div class="mut" style="margin:4px 0 2px">subject: Merge remote-tracking branch 'upstream/prod' into prod-onprem-sync</div>
+  <h3>Commits introduced (17)</h3>
+  <table><tr><th>commit</th><th>subject</th></tr>
+  <tr><td><code class="sha">c48506104b</code></td><td>Merge pull request #3668 from riteshlambda/prod</td></tr>
+  <tr><td><code class="sha">173c6cc254</code></td><td>[Ritesh] - Access Key Summary - reposition tabs and tweak search visibility</td></tr>
+  <tr><td><code class="sha">c5f6fff911</code></td><td>Merge pull request #3664 from rahulgupta-02/TE-16629-access-key-expiry-status-prod</td></tr>
+  <tr><td><code class="sha">521471cb2d</code></td><td>fix(TE-16629): revert aria-label back to LTButton's ariaLabel prop</td></tr>
+  <tr><td><code class="sha">f8027f74da</code></td><td>fix(TE-16629): correct access key expiry status &amp; add expiry info banner</td></tr>
+  <tr><td><code class="sha">fdc639df2a</code></td><td>Merge pull request #3662 from surishubham/prod</td></tr>
+  <tr><td><code class="sha">a7426d2b43</code></td><td>Merge pull request #3657 from Dev0806/hotfix/TE-17257-prod-cherrypick</td></tr>
+  <tr><td><code class="sha">81c8cd9003</code></td><td>fix(Security): remove unnecessary parameter from copyText call on token mutation success</td></tr>
+  <tr><td><code class="sha">08b1dfdd82</code></td><td>Merge pull request #3661 from surishubham/sync</td></tr>
+  <tr><td><code class="sha">ec69b99433</code></td><td>Merge pull request #3660 from surishubham/sync</td></tr>
+  <tr><td><code class="sha">b1599745df</code></td><td>style(TE-17257): add Teams chip overflow + popover-flip CSS</td></tr>
+  <tr><td><code class="sha">bee6d15d41</code></td><td>fix(TE-17257): restore upstream ProfileForm, scope change to Teams overflow</td></tr>
+  <tr><td><code class="sha">b3ad7c9e46</code></td><td>Merge pull request #3651 from sandeepKumarLambdatest/fix/onprem-cd-disable-release-deploy</td></tr>
+  <tr><td><code class="sha">22ecf81e67</code></td><td>ci(onprem): stop GitHub release from auto-triggering on-prem prod deploy</td></tr>
+  <tr><td><code class="sha">88fb42a269</code></td><td>Merge pull request #3640 from surishubham/prod</td></tr>
+  <tr><td><code class="sha">1bba94d26d</code></td><td>fix: update lt-common-header dependency to version 0.3.86</td></tr>
+  <tr><td><code class="sha">30b945dccf</code></td><td>Merge pull request #3639 from surishubham/sync</td></tr>
+  </table>
+  <h3>What to test (16 changed files → screens/areas · compare on https://before-fae34c-3001.lambdatest.com vs https://after-fae34c-3003.lambdatest.com)</h3>
+  <table><tr><th>file</th><th>change</th><th>what to test</th></tr>
+  <tr><td><code>package-lock.json</code></td><td>M <span class="add">+7</span>/<span class="del">-7</span></td><td>config — verify build/runtime behavior unchanged</td></tr>
+  <tr><td><code>package.json</code></td><td>M <span class="add">+1</span>/<span class="del">-1</span></td><td>config — verify build/runtime behavior unchanged</td></tr>
+  <tr><td><code>src/components/security/access-key/AccessKeyExcludedTable/index.tsx</code></td><td>M <span class="add">+3</span>/<span class="del">-1</span></td><td>component: security (verify screens using it)</td></tr>
+  <tr><td><code>src/components/security/access-key/AccessKeyExpiry/index.tsx</code></td><td>M <span class="add">+7</span>/<span class="del">-0</span></td><td>component: security (verify screens using it)</td></tr>
+  <tr><td><code>src/components/security/access-key/AccessKeyExpiryConfirmationModal/index.tsx</code></td><td>M <span class="add">+2</span>/<span class="del">-2</span></td><td>component: security (verify screens using it)</td></tr>
+  <tr><td><code>src/components/security/access-key/AccessKeyRegenerateConfirmationModal/index.tsx</code></td><td>A <span class="add">+62</span>/<span class="del">-0</span></td><td>component: security (verify screens using it)</td></tr>
+  <tr><td><code>src/components/security/access-key/AccessKeySummary/index.tsx</code></td><td>M <span class="add">+19</span>/<span class="del">-10</span></td><td>component: security (verify screens using it)</td></tr>
+  <tr><td><code>src/components/security/access-key/AccessKeySummaryIndividual/index.tsx</code></td><td>M <span class="add">+31</span>/<span class="del">-4</span></td><td>component: security (verify screens using it)</td></tr>
+  <tr><td><code>src/components/security/password-access/PasswordExpiry/index.tsx</code></td><td>M <span class="add">+8</span>/<span class="del">-0</span></td><td>component: security (verify screens using it)</td></tr>
+  <tr><td><code>src/components/security/password-access/PasswordExpiryConfirmationModal/index.tsx</code></td><td>M <span class="add">+1</span>/<span class="del">-1</span></td><td>component: security (verify screens using it)</td></tr>
+  <tr><td><code>src/components/user/Profile/index.tsx</code></td><td>M <span class="add">+12</span>/<span class="del">-4</span></td><td>component: user (verify screens using it)</td></tr>
+  <tr><td><code>src/components/user/ProfileForm/index.tsx</code></td><td>M <span class="add">+29</span>/<span class="del">-38</span></td><td>component: user (verify screens using it)</td></tr>
+  <tr><td><code>src/components/user/Security/Security.cloud.tsx</code></td><td>M <span class="add">+33</span>/<span class="del">-22</span></td><td>component: user (verify screens using it)</td></tr>
+  <tr><td><code>src/containers/DashboardV2.tsx</code></td><td>M <span class="add">+8</span>/<span class="del">-2</span></td><td>screen: /dashboardv2</td></tr>
+  <tr><td><code>src/containers/Login.cloud.tsx</code></td><td>M <span class="add">+10</span>/<span class="del">-0</span></td><td>screen: /login.cloud</td></tr>
+  <tr><td><code>src/containers/Signup.tsx</code></td><td>M <span class="add">+10</span>/<span class="del">-0</span></td><td>screen: /signup</td></tr>
+  </table>
+</div>
+<div class="batch leg-onprem">
+  <div class="hdr"><span class="tag onprem">On-Premises</span> &nbsp;<b>2026-06-10</b> &nbsp;<code class="sha">3d96728713</code> → <code class="sha">42c63f29cb</code></div>
+  <div class="mut">7 commit(s) · 6 changed file(s) · upstream tip <code class="sha">58bd7cf5ed</code> · <b>test on:</b> 3000 (before) vs 3002 (after)</div>
+  <div class="mut" style="margin:4px 0 2px">subject: Merge remote-tracking branch 'upstream/on-prem' into prod-onprem-sync</div>
+  <h3>Commits introduced (7)</h3>
+  <table><tr><th>commit</th><th>subject</th></tr>
+  <tr><td><code class="sha">58bd7cf5ed</code></td><td>Merge pull request #3625 from rahul-lt/TE-13367</td></tr>
+  <tr><td><code class="sha">b4ddf9734a</code></td><td>Merge pull request #3624 from rahul-lt/TE-15722</td></tr>
+  <tr><td><code class="sha">d7bb91ddd7</code></td><td>Merge pull request #3629 from sandeepKumarLambdatest/TE-17066-projectname-empty-validation</td></tr>
+  <tr><td><code class="sha">aad059f4d8</code></td><td>Fix Formik validate gating valid submissions; add happy-path tests</td></tr>
+  <tr><td><code class="sha">aee9635a34</code></td><td>TE-17066: add projectName validation (Edit + Add) — empty/whitespace blocked</td></tr>
+  <tr><td><code class="sha">2f6cd028d6</code></td><td>fix(TE-13367): show 0 for empty min_count in HyperExecute queue mapping</td></tr>
+  <tr><td><code class="sha">3a88fbf4b6</code></td><td>feat(TE-15722): add search in already-added users on Edit Team drawer</td></tr>
+  </table>
+  <h3>What to test (6 changed files → screens/areas · compare on https://hyperexecute-onprem-before-fae34c-3000.hyperexecute.cloud vs https://hyperexecute-onprem-after-fae34c-3002.hyperexecute.cloud)</h3>
+  <table><tr><th>file</th><th>change</th><th>what to test</th></tr>
+  <tr><td><code>src/api/rbacService.ts</code></td><td>M <span class="add">+7</span>/<span class="del">-2</span></td><td>API/service layer — verify network-backed screens</td></tr>
+  <tr><td><code>src/components/preferences/OrganizationPreferences/HyperExecutePreferences/queue-mapping/table.tsx</code></td><td>M <span class="add">+6</span>/<span class="del">-2</span></td><td>component: preferences (verify screens using it)</td></tr>
+  <tr><td><code>src/components/user/TeamsModal/rbacTeamsModal.onprem.tsx</code></td><td>M <span class="add">+29</span>/<span class="del">-1</span></td><td>component: user (verify screens using it)</td></tr>
+  <tr><td><code>src/containers/Projects/Common/Add.tsx</code></td><td>M <span class="add">+10</span>/<span class="del">-4</span></td><td>screen: /projects</td></tr>
+  <tr><td><code>src/containers/Projects/Common/Edit.tsx</code></td><td>M <span class="add">+10</span>/<span class="del">-4</span></td><td>screen: /projects</td></tr>
+  <tr><td><code>src/containers/Projects/Common/projectNameValidation.test.tsx</code></td><td>A <span class="add">+176</span>/<span class="del">-0</span></td><td>screen: /projects</td></tr>
+  </table>
+</div>
+<div class="batch leg-prod">
+  <div class="hdr"><span class="tag prod">Production</span> &nbsp;<b>2026-06-10</b> &nbsp;<code class="sha">2d4307da67</code> → <code class="sha">3d96728713</code></div>
+  <div class="mut">6 commit(s) · 4 changed file(s) · upstream tip <code class="sha">8eff3912a7</code> · <b>test on:</b> 3001 (before) vs 3003 (after)</div>
+  <div class="mut" style="margin:4px 0 2px">subject: Merge remote-tracking branch 'upstream/prod' into prod-onprem-sync</div>
+  <h3>Commits introduced (6)</h3>
+  <table><tr><th>commit</th><th>subject</th></tr>
+  <tr><td><code class="sha">8eff3912a7</code></td><td>Merge pull request #3630 from surishubham/prod</td></tr>
+  <tr><td><code class="sha">edce0eb63a</code></td><td>Merge pull request #3628 from surishubham/sync</td></tr>
+  <tr><td><code class="sha">fc10a4b793</code></td><td>Merge pull request #3627 from surishubham/prod</td></tr>
+  <tr><td><code class="sha">5c950c8a3a</code></td><td>fix: rename 'Agent to Agent' to 'Agent Testing' in Products component</td></tr>
+  <tr><td><code class="sha">9a4bcc4ef3</code></td><td>Merge pull request #3622 from jatinr7/deps/bump-lt-common-header-0.3.85-prod</td></tr>
+  <tr><td><code class="sha">ce057ff6aa</code></td><td>deps: bump lt-common-header to 0.3.85</td></tr>
+  </table>
+  <h3>What to test (4 changed files → screens/areas · compare on https://before-fae34c-3001.lambdatest.com vs https://after-fae34c-3003.lambdatest.com)</h3>
+  <table><tr><th>file</th><th>change</th><th>what to test</th></tr>
+  <tr><td><code>package-lock.json</code></td><td>M <span class="add">+20357</span>/<span class="del">-4110</span></td><td>config — verify build/runtime behavior unchanged</td></tr>
+  <tr><td><code>package.json</code></td><td>M <span class="add">+4</span>/<span class="del">-9</span></td><td>config — verify build/runtime behavior unchanged</td></tr>
+  <tr><td><code>src/components/dashboard/DashboardScreenRevamp/Products/Products.cloud.tsx</code></td><td>M <span class="add">+1</span>/<span class="del">-1</span></td><td>component: dashboard (verify screens using it)</td></tr>
+  <tr><td><code>src/components/user/MultipleEmails/rbacInviteUsers.tsx</code></td><td>M <span class="add">+54</span>/<span class="del">-55</span></td><td>component: user (verify screens using it)</td></tr>
+  </table>
+</div>
+<div class="mut" style="margin-top:18px">For each batch, open the affected screens on the before vs after URL for its environment (leg tag) and confirm no regression.</div>
+</body></html>
